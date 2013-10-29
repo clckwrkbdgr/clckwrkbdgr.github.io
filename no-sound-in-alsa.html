@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta http-equiv=content-type content="text/html; charset=utf-8"/>
+<title>No sound in ALSA (unable to open slave)</title>
+</head>
+<body>
+<h1>No sound in ALSA (unable to open slave)</h1>
+<p>After upgrading to Debian Wheezy and deinstalling pulseaudio I encountered problem with ALSA, specifically with mocp:</p>
+<pre><code>$ mocp
+Running the server...
+Trying JACK...
+Trying ALSA...
+ALSA lib pcm_dmix.c:1018:(snd_pcm_dmix_open) unable to open slave
+Trying OSS...
+FATAL_ERROR: No valid sound driver!
+FATAL_ERROR: Server exited!
+</code></pre>
+<p><code>aplay</code> also prints similar messages.</p>
+<p>The solution is to create a file named <code>.asoundrc</code> in your home folder and paste this in:</p>
+<pre><code>pcm.dsp {
+	type plug
+	slave.pcm "dmix"
+}
+</code></pre>
+<p>Then alsa service should be restarted:</p>
+<pre><code>$ sudo service alsa-utils restart
+</code></pre>
+<p>Now mocp should work fine.</p>
+</body>
+</html>

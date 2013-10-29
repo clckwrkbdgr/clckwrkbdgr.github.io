@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta http-equiv=content-type content="text/html; charset=utf-8"/>
+<title>Qt crosscompilation for Windows in Linux</title>
+</head>
+<body>
+<h1>Qt crosscompilation for Windows in Linux</h1>
+<p>Taken from <a href="http://habrahabr.ru/blogs/qt_software/98131/">http://habrahabr.ru/blogs/qt_software/98131/</a></p>
+<p>Requirements:</p>
+<ul>
+	<li><b>Qt SDK for Linux</b> and <b>Qt SDK for Windows</b> must be installed.</li>
+	<li><b>GCC/G++</b> (usually it comes installed along with a distro).</li>
+	<li>Compiler <b>i586-mingw32msvc-gcc/i586-mingw32msvc-g++</b> (can be found in repository for your distro).</li>
+</ul>
+<p>In order to make crosscompilation possible one must create new spec for it. To make this task a bit easier it is more convinient to copy an existing one, for example, <code>win32-g++</code> (here and further <code>$QT_WIN</code> points to Qt SDK for Windows installation path and <code>$QT_LINUX</code> - to Qt SDK for Linux):</p>
+<pre><code>$ cd $QT_WIN/qt/mkspecs/
+$ cp -R win32-g++/* win32-x-g++/</code></pre>
+<p>Next, some changes must be done in <i>win32-x-g++/qmake.conf</i>:</p>
+<pre><code>QMAKE_SH = sh
+QMAKE_CC = i586-mingw32msvc-gcc
+QMAKE_CXX = i586-mingw32msvc-g++
+QMAKE_INCDIR_QT = $QT_WIN/qt/include
+QMAKE_LIBDIR_QT = $QT_WIN/qt/lib
+QMAKE_LINK = i586-mingw32msvc-g++
+QMAKE_LINK_C = i586-mingw32msvc-gcc
+QMAKE_LFLAGS = -mthreads -Wl,-enable-stdcall-fixup -Wl,-enable-auto-import -Wl,-enable-runtime-pseudo-reloc -mwindows
+QMAKE_MOC = $QT_LINUX/qt/bin/moc
+QMAKE_UIC = $QT_LINUX/qt/bin/uic
+QMAKE_IDC = $QT_LINUX/qt/bin/idc
+QMAKE_RC = i586-mingw32msvc-windres
+QMAKE_STRIP = i586-mingw32msvc-strip</code></pre>
+<p>Building project now is easy. All that should be done is setting of <i>QMAKESPEC</i> environment variable. This variable is checked by qmake on the startup. Unsetting it  will return Qt spec target to the Linux one (that is, system's default).</p>
+<pre><code>$ export QTDIR=/opt/qtsdk-win/Desktop/Qt/4.7.3/mingw
+$ export QMAKESPEC=$QTDIR/mkspecs/win32-x-g++
+$ make clean distclean # optional; used for cleaning from previous builds
+$ qmake # a linux one; all crosscompilation work is by fact done in spec file
+$ make</code></pre>
+</body>
+</html>

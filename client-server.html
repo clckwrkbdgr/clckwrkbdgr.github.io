@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta http-equiv=content-type content="text/html; charset=utf-8"/>
+<title>Client-server architecture cheat-sheet</title>
+</head>
+<body>
+<h1>Client-server architecture cheat-sheet</h1>
+<p>There are two types of users in client-server architecture:</p>
+<ul>
+	<li>a <b>server</b> that awaits requests and serves them;</li>
+	<li>and a <b>client</b> that sends the requests and waits for a response.</li>
+</ul>
+
+<h2>Workflow</h2>
+<p>Basic server creation and execution workflow:</p>
+<ol>
+	<li>Open <b>socket</b>. This socket will be used by the server to listen for incoming client requests.</li>
+	<li>Created socket is just a structure in memory. One needs to <b>bind</b> to to a particular address and port in order to use it. This address is called a <i>socket address</i> and is used by client for sending the request to.</li>
+	<li>The next what's needed is to <b>listen</b> to the socket for incoming requests.</li>
+	<li>Each incoming request will create a <i>separate socket</i> for use with a particular client which sent the request. That is, for 10 client requests there will be 10 sockets created.</li>
+	<li>Now that there is a ready dedicated socket, we can speak about real client-server process. Sockets are actually ordinary file descriptors and can be used for both <b>reading</b> and <b>writing</b>. This is where the reign of the <i>protocols</i> begins.</li>
+	<li>After processing the query (or queries) is complete, you can <b>close</b> the socket. In this case, the connection is terminated.</li>
+</ol>
+<p>Clients are created and used a lot easier:</p>
+<ol>
+	<li>Create a <b>socket</b> and <b>connect</b> it to the server (knowing the exact address of the socket).</li>
+	<li>Now you can <b>read</b> and <b>write</b> data, as in the case with the server.</li>
+	<li>After using socket you can <b>close</b> it.</li>
+</ol>
+
+<h2>Some points on working with client-server</h2>
+<p>Sockets based on Berkeley sockets can work in two modes: <i>blocking</i> and <i>nonblocking</i>.</p>
+<ul>
+	<li><b>Blocking</b> sockets, as the name suggests, block the execution flow until they have accomplished their part. When applied to reading/writing this means that the socket may not send or receive all the data passed to it. Blocking calls return the count of sent/received bytes and the application must resubmit unprocessed data.</li>
+	<li><b>Non-blocking</b> (asynchronous) calls transfer control of the workflow almost immediately after the call, implementing an event model. To work with such sockets in Berkeley sockets there is a <b>select</b> function.</li>
+</ul>
+<p>Each side can suddenly terminate a session without correct signal to the opposite side (considering the protocol). For example, the network connection is gone or the computer is being taking away by enemies. In this case, reading/writing to the socket will return an error.</p>
+<p>In case of a server, it is usually a good idea to keep <i>more than one client connection</i> simultaneously, for example, for network game players or streaming video viewers. Blocking calls will interfere with the program flow. The most common method in this case is:</p>
+<ul>
+	<li>Creating of a separate process/thread to work with a separate socket. For 10 sockets there will be 10 threads or processes.</li>
+	<li>Using of non-blocking mode.</li>
+</ul>
+
+<h2>Protocols</h2>
+<p>If possible, one should always use a <i>text message format</i> for the protocol messages. Such protocols are easy to debug because they are human-readable. Text protocols are guaranteed to be portable: text is always text on any platform unlike binary data (consider byte order, size of data types etc). Such protocol could use, for example, XML or JSON as a base. Or it can be simple commands like in SMTP or FTP.</p>
+<p>Designing protocols is more an art than a formal methods, but there are some general principles.</p>
+<ul>
+	<li>It is advisable to send the message's protocol version and/or application version with the message itself. Message formats of different protocols versions (especially major ones) may be different and this should be taken into account.</li>
+	<li>Dedicated messages for the beginning and the ending of the work is preferrably too. For example, HELO and QUIT in SMTP.</li>
+	<li>As a rule, the message may have different formats (and different sizes) for different commands. This can be handled either by the command format (fixed size), or by size sent with the message (for example, the first 4 bytes), or by a message terminator (e.g. '}' in JSON), but it should be considered in any case because the socket considers data moved through it as a stream and there is no mechanisms of separation of messages embedded.</li>
+</ul>
+
+</body>
+</html>

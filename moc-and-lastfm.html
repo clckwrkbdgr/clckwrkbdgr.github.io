@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv=content-type content="text/html; charset=utf-8"/>
+<title>MOC and Last.fm</title>
+</head>
+<body>
+<h1>MOC and Last.fm</h1>
+<p>The <a href="http://moc.daper.net/">moc</a> player itself doesn't support <a href="http://www.last.fm/">scrobbling</a>. But there is an option to execute an external command on each track change:</p>
+<pre><code>OnSongChange = "/path/to/external/command %a %t %d %r"</code></pre>
+<p>Arguments are substituted using current song (that is, the song that playing is changed to) info:</p>
+<ul>
+	<li><b>%a</b> is replaced by the <i>artist</i> name.</li>
+	<li><b>%t</b> is replaced by the song <i>title</i>.</li>
+	<li><b>%r</b> is replaced by the <i>album</i> title.</li>
+	<li><b>%d</b> is the track <i>duration</i>.</li>
+</ul>
+<p>Each parameter will be properly escaped. Os course, if there no info about some of that parameters, an empty string will be passed.</p>
+<p>Perfect script for above task can be found at <a href="http://lukeplant.me.uk/blog/posts/moc-and-last-fm/">http://lukeplant.me.uk/blog/posts/moc-and-last-fm/</a>. Put it anywhere you like and make it executable.</p>
+<pre><code>$ chmod +x moc_submit_lastfm</code></pre>
+<p>Now it can be specified in the MOC confing file:</p>
+<pre><code>OnSongChange = "/path/to/moc_submit_lastfm --artist %a --title %t --length %d --album %r"</code></pre>
+<p>Next what will need is a scrobbler itself. The most common one under Linux and the one that is used by script is <code>lastfmsubmitd</code>. Upon installation it may ask user to fill some data like Last.fm user name and password, and user group. The latter one by default is called <code>lastfm</code>. The only users who can sumbit info to Last.fm. are the ones who are present in group <code>lastfm</code></p>
+<pre><code>$ sudo apt-get install lastfmsubmitd
+$ sudo addgroup lastfm
+$ sudo adduser $YOUR_USER lastfm # This will add user to the group</code></pre>
+<p>Now mocp should be completely restarted in order to re-read it's config:</p>
+<pre><code>$ mocp -x
+$ mocp</code></pre>
+<p><b>N.B.</b>: Sometimes even if <code>/etc/lastfmsubmitd.conf</code> contains valid account info, no scrobbling data is send by <code>lastfmsubmitd</code> during being said that <code>lastfmsubmitd: no account info found; exiting.</code>. One reason for that is that conf file is not accessible by the deamon, usually due to its permissions: they're 600 (that is, the only reader and writer is <code>root</code>) and should be set to 755 (that is, every user can read but only root is allowed to write). Also there might be need to set 777 permissions to pool dir <code>/var/spool/lastfm</code>.</p>
+</body>
+</html>
