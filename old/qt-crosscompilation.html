@@ -1,10 +1,7 @@
-<html>
-<head>
-<meta http-equiv=content-type content="text/html; charset=utf-8"/>
-<title>Qt crosscompilation for Windows in Linux</title>
-</head>
-<body>
-<h1>Qt crosscompilation for Windows in Linux</h1>
+---
+layout: default
+title: Qt crosscompilation for Windows in Linux
+---
 <p>Taken from <a href="http://habrahabr.ru/blogs/qt_software/98131/">http://habrahabr.ru/blogs/qt_software/98131/</a></p>
 <p>Requirements:</p>
 <ul>
@@ -35,5 +32,3 @@ $ export QMAKESPEC=$QTDIR/mkspecs/win32-x-g++
 $ make clean distclean # optional; used for cleaning from previous builds
 $ qmake # a linux one; all crosscompilation work is by fact done in spec file
 $ make</code></pre>
-</body>
-</html>

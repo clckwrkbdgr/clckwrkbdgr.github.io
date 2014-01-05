@@ -1,10 +1,7 @@
-<html>
-<head>
-<meta http-equiv=content-type content="text/html; charset=utf-8"/>
-<title>MOC and Last.fm</title>
-</head>
-<body>
-<h1>MOC and Last.fm</h1>
+---
+layout: default
+title: MOC and Last.fm
+---
 <p>The <a href="http://moc.daper.net/">moc</a> player itself doesn't support <a href="http://www.last.fm/">scrobbling</a>. But there is an option to execute an external command on each track change:</p>
 <pre><code>OnSongChange = "/path/to/external/command %a %t %d %r"</code></pre>
 <p>Arguments are substituted using current song (that is, the song that playing is changed to) info:</p>
@@ -27,5 +24,3 @@ $ sudo adduser $YOUR_USER lastfm # This will add user to the group</code></pre>
 <pre><code>$ mocp -x
 $ mocp</code></pre>
 <p><b>N.B.</b>: Sometimes even if <code>/etc/lastfmsubmitd.conf</code> contains valid account info, no scrobbling data is send by <code>lastfmsubmitd</code> during being said that <code>lastfmsubmitd: no account info found; exiting.</code>. One reason for that is that conf file is not accessible by the deamon, usually due to its permissions: they're 600 (that is, the only reader and writer is <code>root</code>) and should be set to 755 (that is, every user can read but only root is allowed to write). Also there might be need to set 777 permissions to pool dir <code>/var/spool/lastfm</code>.</p>
-</body>
-</html>

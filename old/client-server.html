@@ -1,10 +1,7 @@
-<html>
-<head>
-<meta http-equiv=content-type content="text/html; charset=utf-8"/>
-<title>Client-server architecture cheat-sheet</title>
-</head>
-<body>
-<h1>Client-server architecture cheat-sheet</h1>
+---
+layout: default
+title: Client-server architecture cheat-sheet
+---
 <p>There are two types of users in client-server architecture:</p>
 <ul>
 	<li>a <b>server</b> that awaits requests and serves them;</li>
@@ -49,6 +46,3 @@
 	<li>Dedicated messages for the beginning and the ending of the work is preferrably too. For example, HELO and QUIT in SMTP.</li>
 	<li>As a rule, the message may have different formats (and different sizes) for different commands. This can be handled either by the command format (fixed size), or by size sent with the message (for example, the first 4 bytes), or by a message terminator (e.g. '}' in JSON), but it should be considered in any case because the socket considers data moved through it as a stream and there is no mechanisms of separation of messages embedded.</li>
 </ul>
-
-</body>
-</html>
