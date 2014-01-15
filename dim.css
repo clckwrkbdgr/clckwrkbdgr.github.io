@@ -62,8 +62,10 @@ div.main, div.footer, div.header {
 	overflow: hidden;
 }
 
-div.main {
+div.post {
+	overflow: hidden;
 }
+
 div.footer {
 	font-size: 12px;
 	margin-top: 10px;
@@ -79,4 +81,8 @@ img {
 	float: left;
 	margin: 0 10px 5px 0;
 	display: block;
+}
+
+p.content-link {
+	float: right;
 }
