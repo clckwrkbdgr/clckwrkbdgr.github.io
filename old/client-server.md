@@ -8,7 +8,7 @@ There are two types of users in client-server architecture:
 * and a **client** that sends the requests and waits for a response.
 
 Workflow
-========
+--------
 
 Basic server creation and execution workflow:
 
@@ -26,7 +26,7 @@ Clients are created and used a lot easier:
 * After using socket you can **close** it.
 
 Some points on working with client-server
-=========================================
+-----------------------------------------
 
 Sockets based on Berkeley sockets can work in two modes: _blocking_ and _nonblocking_.
 
@@ -41,7 +41,7 @@ In case of a server, it is usually a good idea to keep _more than one client con
 * Using of non-blocking mode.
 
 Protocols
-=========
+---------
 
 If possible, one should always use a _text message format_ for the protocol messages. Such protocols are easy to debug because they are human-readable. Text protocols are guaranteed to be portable: text is always text on any platform unlike binary data (consider byte order, size of data types etc). Such protocol could use, for example, XML or JSON as a base. Or it can be simple commands like in SMTP or FTP.
 

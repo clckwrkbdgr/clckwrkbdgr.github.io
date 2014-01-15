@@ -21,7 +21,7 @@ game_assert(
 );
 ```
 
-Return statement could not be used there, but exeception throwing works pretty much the same way: it breaks execution flow and correctly destroys all local variables. And it could carry data like message text, which can be displayed when exception is catched. So full game_assert function looks like this: 
+Return statement could not be used there, but exeception throwing works pretty much the same way: it breaks execution flow and correctly destroys all local variables. And it could carry data like message text, which can be displayed when exception is catched. So full `game_assert` function looks like this: 
     
 ```c++    
 void game_assert(bool condition, const std::string & message)  
