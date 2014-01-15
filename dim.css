@@ -14,8 +14,12 @@ a:hover, a:active {
 	color: #ffff00;
 	text-decoration: underline;
 }
-code, pre {
+pre {
+	padding: 5px;
 	margin: 10px;
+	background: #000000;
+}
+code {
 	background: #000000;
 }
 h1, h2, h3 {
