@@ -1,6 +1,8 @@
 ---
 layout: default
 date: 2013-11-29 09:41:00
+parent-url: /
+parent: owlwood
 title: "Temple of Trials: mutilevel dungeon"
 ---
 [![tot-multilevel][tot-multilevel-thumb]] [tot-multilevel]

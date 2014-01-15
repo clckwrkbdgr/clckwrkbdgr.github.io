@@ -1,5 +1,7 @@
 ---
 layout: default
+parent-url: /
+parent: owlwood
 title: Some thought on game design
 ---
 Taken from [http://blog.tonydowney.ca/2011/designing-to-succeed/](http://blog.tonydowney.ca/2011/designing-to-succeed/).

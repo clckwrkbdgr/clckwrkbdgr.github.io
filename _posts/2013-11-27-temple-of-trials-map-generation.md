@@ -1,6 +1,8 @@
 ---
 layout: default
 date: 2013-11-27 17:20:00
+parent-url: /
+parent: owlwood
 title: "Temple of Trials: map generation"
 ---
 [![tot-map-generation][tot-map-generation-thumb]] [tot-map-generation]

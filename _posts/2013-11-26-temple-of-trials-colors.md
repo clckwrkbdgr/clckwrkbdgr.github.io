@@ -1,6 +1,8 @@
 ---
 layout: default
 date: 2013-11-26 17:36:00
+parent-url: /
+parent: owlwood
 title: "Temple of Trials: colors"
 ---
 [![tot-colors][tot-colors-thumb]] [tot-colors]

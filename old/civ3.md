@@ -1,5 +1,7 @@
 ---
 layout: default
+parent-url: /
+parent: owlwood
 title: Civilization3 under Linux
 ---
 So far I managed to run a Civilization 3: Conquests (v122) version under wine-1.0.1. Debian Squeeze, NVidia driver.

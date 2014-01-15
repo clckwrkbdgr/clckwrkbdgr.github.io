@@ -1,6 +1,8 @@
 ---
 layout: default
 date: 2013-11-21 12:35:00
+parent-url: /
+parent: owlwood
 title: Temple of Trials
 ---
 _So. A roguelike-wannabe I'm doing now, Temple of Trials. When it'll be done, it will be a roguelike after Arroyo's Temple of Trials. Have no idea is this idea would look good as a game, but still, I liked that temple a lot. Decided to write it using ["How to Write a Roguelike in 15 Steps"][15-steps] article. Right now it has implemented no time system, no combat, just map of tiles and some monsters moving and bumping (up till step 7)._  

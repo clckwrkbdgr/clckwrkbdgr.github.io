@@ -1,6 +1,8 @@
 ---
 layout: default
 date: 2013-12-06 10:29:00
+parent-url: /
+parent: owlwood
 title: "Unit testing framework in C++: suites"
 ---
 Some tests belong to one collection called 'test suite'. They are still usual tests, so nothing should be changed in a workflow. Practically, suite behaves a lot like namespace, so latter one is the best way to implement suite. 

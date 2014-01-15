@@ -1,6 +1,8 @@
 ---
 layout: default
 date: 2013-12-04 16:28:00
+parent-url: /
+parent: owlwood
 title: "Unit testing framework in C++: init"
 ---
 _My goal was to create simple unit testing framework, possibly one header only. It should support most of usual unit testing features: tests (of course), various assertions, suites, fixtures. Also I wanted it to be as less verbose as possible in test declaration. Probably just to write `TEST(test_name) { ... }` to be sufficient._  

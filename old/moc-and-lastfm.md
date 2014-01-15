@@ -1,5 +1,7 @@
 ---
 layout: default
+parent-url: /
+parent: owlwood
 title: MOC and Last.fm
 ---
 The [moc](http://moc.daper.net/) player itself doesn't support [scrobbling](http://www.last.fm/). But there is an option to execute an external command on each track change:

@@ -1,5 +1,7 @@
 ---
 layout: default
+parent-url: /
+parent: owlwood
 title: Qt project file module snippet
 ---
 For each pair like `main.h` and `main.cpp` they could be replaced with one entry `main` in variable MODULES, for example.

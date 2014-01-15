@@ -1,5 +1,7 @@
 ---
 layout: default
+parent-url: /
+parent: owlwood
 title: No sound in ALSA (unable to open slave)
 ---
 After upgrading to Debian Wheezy and deinstalling pulseaudio I encountered problem with ALSA, specifically with mocp:

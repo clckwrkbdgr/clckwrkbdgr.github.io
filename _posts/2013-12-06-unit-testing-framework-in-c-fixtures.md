@@ -1,6 +1,8 @@
 ---
 layout: default
 date: 2013-12-06 17:42:00
+parent-url: /
+parent: owlwood
 title: "Unit testing framework in C++: fixtures"
 ---
 I have two tests. 

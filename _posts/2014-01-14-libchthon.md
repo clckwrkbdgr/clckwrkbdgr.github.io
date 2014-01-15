@@ -1,6 +1,8 @@
 ---
 layout: default
 date: 2014-01-14 19:23:05
+parent-url: /
+parent: owlwood
 title: libchthon
 ---
 

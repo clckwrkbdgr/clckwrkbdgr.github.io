@@ -1,5 +1,7 @@
 ---
 layout: default
+parent-url: /
+parent: owlwood
 title: Migrating SVN subproject to GitHub
 ---
 Suppose you have SVN repo that consists of a number of subprojects. And you want to extract one of them and convert it into a valid Git repo in order to load it to GitHub.

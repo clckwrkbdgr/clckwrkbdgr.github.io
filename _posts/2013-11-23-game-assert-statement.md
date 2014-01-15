@@ -1,6 +1,8 @@
 ---
 layout: default
 date: 2013-11-23 15:59:00
+parent-url: /
+parent: owlwood
 title: Game assert statement
 ---
 I use statements like this to check conditions for some routine to work:  

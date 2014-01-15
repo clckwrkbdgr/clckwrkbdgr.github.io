@@ -1,6 +1,8 @@
 ---
 layout: default
 date: 2013-12-11 17:43:00
+parent-url: /
+parent: owlwood
 title: Sprite variations for Miniban
 ---
 [![sokoban-screen][sokoban-screen-thumb]] [sokoban-screen]

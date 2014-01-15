@@ -1,6 +1,8 @@
 ---
 layout: default
 date: 2013-11-26 11:03:00
+parent-url: /
+parent: owlwood
 title: "Temple of Trials: step 11"
 ---
 [![tot-step-11][tot-step-11-thumb]] [tot-step-11]

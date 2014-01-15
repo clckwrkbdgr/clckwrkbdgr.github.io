@@ -1,5 +1,7 @@
 ---
 layout: default
+parent-url: /
+parent: owlwood
 title: Qt crosscompilation for Windows in Linux
 ---
 Taken from [http://habrahabr.ru/blogs/qt_software/98131/](http://habrahabr.ru/blogs/qt_software/98131/).

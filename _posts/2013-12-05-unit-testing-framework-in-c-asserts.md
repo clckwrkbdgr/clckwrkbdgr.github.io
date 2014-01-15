@@ -1,6 +1,8 @@
 ---
 layout: default
 date: 2013-12-05 16:25:00
+parent-url: /
+parent: owlwood
 title: "Unit testing framework in C++: asserts"
 ---
 Simple C-style asserts aren't usable for unit testing, as they exit immediately on first error. Desired functionality for unit test's asserts is to stop execution only of current test, and then go to the next one. C++ exceptions are the best for that. Just detect error and throw exception, then catch it, show "FAIL" message, and continue. As for test asserts, most basic ones (I choose to stick with them) are: conditional assert (ASSERT), equality test (EQUAL), and FAIL assert which always fails - suitable for not implemented yet tests or when catching exceptions. 

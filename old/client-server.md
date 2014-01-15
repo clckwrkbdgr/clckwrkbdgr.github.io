@@ -1,5 +1,7 @@
 ---
 layout: default
+parent-url: /
+parent: owlwood
 title: Client-server architecture cheat-sheet
 ---
 There are two types of users in client-server architecture:
