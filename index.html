@@ -2,11 +2,14 @@
 layout: default
 title: owlwood
 ---
+<div class="content">
 <ul>
 	{% for post in site.posts %}
 	<li>{{ post.date | date_to_string }} - <a href="{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
 </ul>
+</div>
+<div class="content">
 <h2>Older posts:</h2>
 <ul>
 	<li><a href="/old/civ3.html">Civilization3 under Linux</a></li>
@@ -19,3 +22,4 @@ title: owlwood
 	<li><a href="/old/qt-crosscompilation.html">Qt crosscompilation for Windows in Linux</a></li>
 	<li><a href="/old/qt-project-module-description.html">Qt project file module snippet</a></li>
 </ul>
+</div>
