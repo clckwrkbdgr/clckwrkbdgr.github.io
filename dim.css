@@ -62,7 +62,7 @@ div.main, div.footer, div.header {
 	overflow: hidden;
 }
 
-div.post {
+div.post, div.post-content {
 	overflow: hidden;
 }
 
