@@ -63,3 +63,8 @@ div.footer {
 div.header {
 	margin-bottom: 10px;
 }
+
+img {
+	float: right;
+	margin: 5px;
+}
