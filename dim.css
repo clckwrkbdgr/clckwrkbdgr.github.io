@@ -71,12 +71,8 @@ div.footer {
 div.header {
 	margin-bottom: 10px;
 }
-div.title {
-	float:left;
-}
 div.contacts {
 	float:right;
-	line-height: 5em;
 }
 
 img {
