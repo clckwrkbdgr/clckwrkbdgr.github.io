@@ -46,12 +46,10 @@ div.body {
 }
 
 div.main, div.footer, div.header {
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 5px 20px 10px 20px;
 	background-color: #0a0a0a;
 	color: #bbbbbb;
+	overflow: hidden;
 }
 
 div.main {
@@ -65,6 +63,7 @@ div.header {
 }
 
 img {
-	float: right;
-	margin: 5px;
+	float: left;
+	margin: 0 10px 5px 0;
+	display: block;
 }
