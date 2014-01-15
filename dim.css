@@ -19,8 +19,14 @@ pre {
 	margin: 10px;
 	background: #000000;
 }
-code {
+:not(pre) > code {
+	display: inline-block;
+	padding: 2px;
 	background: #000000;
+	color: #ffffff;
+	border-color: #555555;
+	border-width: 1px;
+	border-style: dotted;
 }
 h1, h2, h3 {
 	color: #aaaa00;
