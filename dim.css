@@ -18,7 +18,7 @@ pre {
 	padding: 5px;
 	margin: 10px;
 	background: #000000;
-	overflow-x: scroll;
+	overflow-x: auto;
 }
 :not(pre) > code {
 	display: inline-block;
@@ -65,6 +65,11 @@ div.main, div.footer, div.header {
 
 div.post, div.post-content {
 	overflow: hidden;
+}
+div.post-date {
+	color: #555555;
+	padding-left: 10px;
+	font-size: 12px;
 }
 
 div.footer {
