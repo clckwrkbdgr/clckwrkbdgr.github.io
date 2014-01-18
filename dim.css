@@ -19,6 +19,9 @@ pre {
 	margin: 10px;
 	background: #000000;
 	overflow-x: auto;
+	border-color: #333333;
+	border-width: 1px;
+	border-style: dashed;
 }
 :not(pre) > code {
 	display: inline-block;
