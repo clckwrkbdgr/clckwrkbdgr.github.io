@@ -7,3 +7,6 @@ thumbs/%: images/%
 	convert $^ -thumbnail '200x200>' $@
 	git add $@
 
+.PHONY: server
+server: all
+	nohup jekyll serve --detach &
