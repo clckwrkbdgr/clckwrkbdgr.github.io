@@ -5,7 +5,11 @@ parent: owlwood
 title: 
 ---
 <h1 class="cv-header">Igor Chaika</h1>
-<p class="contacts">Ukraine, Donetsk • css-hide: umi0451@gmail.com • 099-047-0156</p>
+<p class="contacts">
+Ukraine, Donetsk
+• umi<span class="NOSPAM">NOSPAM</span>0451@<span class="NOSPAM">AT</span>gmail.<span class="NOSPAM">DOT</span>com
+• 099-047-0156
+</p>
 
 <h2 class="cv-header">Technical Proficiences</h2>
 
