@@ -50,6 +50,14 @@ em, i {
 strong, b {
 	color: #ffffff;
 }
+img {
+	float: left;
+	margin: 0 10px 5px 0;
+	display: block;
+}
+p.content-link {
+	float: right;
+}
 
 div.body {
 	font-size: 14px;
@@ -58,14 +66,12 @@ div.body {
 	margin-right: auto;
 	width: 800px;
 }
-
-div.main, div.footer, div.header {
+div.main, div.menu, div.footer, div.header {
 	padding: 5px 20px 10px 20px;
 	background-color: #0a0a0a;
 	color: #bbbbbb;
 	overflow: hidden;
 }
-
 div.post, div.post-content {
 	overflow: hidden;
 }
@@ -74,24 +80,27 @@ div.post-date {
 	padding-left: 10px;
 	font-size: 12px;
 }
-
 div.footer {
 	font-size: 12px;
 	margin-top: 10px;
 }
 div.header {
 	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
-div.contacts {
-	float:right;
-}
-
-img {
+.title {
 	float: left;
-	margin: 0 10px 5px 0;
-	display: block;
+	padding: 0;
+	margin: 8px 0 0 0;
 }
-
-p.content-link {
+.menu {
 	float: right;
+	list-style-type: none;
+	border-right: 1px solid;
+}
+ul.menu > li {
+	display: inline;
+	padding: 0 16px;
+	border-left: 1px solid;
 }

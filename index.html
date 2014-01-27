@@ -1,7 +1,7 @@
 ---
 layout: default
 parent: umi
-title: owlwood
+title: Recent posts
 ---
 <div class="recent">
 	{% for post in site.posts offset: 0 limit: 10 %}
@@ -9,8 +9,7 @@ title: owlwood
 		<div class="post-title"><h1><a href="{{ post.url }}">{{ post.title }}</a></h1></div>
 		<div class="post-date">{{ post.date }}</div>
 		<div class="post-content">{{ post.content }}</div>
-		<hr>
 	</div>
 	{% endfor %}
+	<p class="content-link"><a href="/content.html">to older posts -></a></p>
 </div>
-<p class="content-link"><a href="/content.html">content -></a></p>
