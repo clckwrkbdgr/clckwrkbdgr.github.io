@@ -104,3 +104,30 @@ ul.menu > li {
 	padding: 0 16px;
 	border-left: 1px solid;
 }
+
+.contacts {
+	text-align: center;
+}
+.cv-header {
+	text-align: center;
+}
+.cv-skill-title {
+	text-align: left;
+}
+.company-name {
+	font-weight: bold;
+	display: table-cell;
+	float: left;
+}
+.date-container {
+	font-weight: bold;
+	display: table-cell;
+	float: right;
+}
+.job-header {
+	width: 100%;
+	display: table;
+}
+.job-title {
+	font-style: italic;
+}
