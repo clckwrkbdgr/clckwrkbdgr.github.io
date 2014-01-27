@@ -2,7 +2,7 @@
 layout: default
 parent-url: /
 parent: owlwood
-title: 
+title: CV
 ---
 <h1 class="cv-header">Igor Chaika</h1>
 <p class="contacts">
