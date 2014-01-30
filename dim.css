@@ -51,8 +51,8 @@ strong, b {
 	color: #ffffff;
 }
 img {
-	float: left;
-	margin: 0 10px 5px 0;
+	float: right;
+	margin: 0 0 5px 10px;
 	display: block;
 }
 p.content-link {
