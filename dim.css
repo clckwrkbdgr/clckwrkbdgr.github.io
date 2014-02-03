@@ -33,6 +33,7 @@ pre {
 	border-style: dotted;
 }
 h1, h2, h3 {
+	padding-left: 20px;
 	color: #aaaa00;
 }
 h1 {
@@ -48,15 +49,12 @@ em, i {
 	color: #ffffff;
 }
 strong, b {
-	color: #ffffff;
+	color: #dddddd;
 }
 img {
 	float: right;
 	margin: 0 0 5px 10px;
 	display: block;
-}
-p.content-link {
-	float: right;
 }
 
 div.body {
@@ -91,16 +89,6 @@ div.header {
 	float: left;
 	padding: 0;
 	margin: 8px 0 0 0;
-}
-.menu {
-	float: right;
-	list-style-type: none;
-	border-right: 1px solid;
-}
-ul.menu > li {
-	display: inline;
-	padding: 0 16px;
-	border-left: 1px solid;
 }
 
 .contacts {
