@@ -57,6 +57,11 @@ img {
 	display: block;
 }
 
+hr {
+	border: none;
+	height: 1px;
+	background-color: #888888;
+}
 div.body {
 	font-size: 14px;
 	padding: 10px;
@@ -64,23 +69,8 @@ div.body {
 	margin-right: auto;
 	width: 800px;
 }
-div.main, div.menu, div.footer, div.header {
-	padding: 5px 20px 10px 20px;
+div.main, div.footer, div.header {
 	overflow: hidden;
-}
-div.post-date {
-	color: #555555;
-	padding-left: 10px;
-	font-size: 12px;
-}
-div.footer {
-	font-size: 12px;
-	margin-top: 10px;
-}
-div.header {
-	margin-bottom: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
 }
 .NOSPAM {
 	display: none;
