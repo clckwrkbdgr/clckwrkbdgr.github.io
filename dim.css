@@ -68,9 +68,6 @@ div.main, div.menu, div.footer, div.header {
 	padding: 5px 20px 10px 20px;
 	overflow: hidden;
 }
-div.post, div.post-content {
-	overflow: hidden;
-}
 div.post-date {
 	color: #555555;
 	padding-left: 10px;
@@ -84,38 +81,6 @@ div.header {
 	margin-bottom: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-}
-.title {
-	float: left;
-	padding: 0;
-	margin: 8px 0 0 0;
-}
-
-.contacts {
-	text-align: center;
-}
-.cv-header {
-	text-align: center;
-}
-.cv-skill-title {
-	text-align: left;
-}
-.company-name {
-	font-weight: bold;
-	display: table-cell;
-	float: left;
-}
-.date-container {
-	font-weight: bold;
-	display: table-cell;
-	float: right;
-}
-.job-header {
-	width: 100%;
-	display: table;
-}
-.job-title {
-	font-style: italic;
 }
 .NOSPAM {
 	display: none;
