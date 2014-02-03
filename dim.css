@@ -1,5 +1,5 @@
 body {
-	background-color: #000000;
+	background-color: #0a0a0a;
 	color: #aaaaaa;
 }
 a:link {
@@ -68,8 +68,6 @@ div.body {
 }
 div.main, div.menu, div.footer, div.header {
 	padding: 5px 20px 10px 20px;
-	background-color: #0a0a0a;
-	color: #bbbbbb;
 	overflow: hidden;
 }
 div.post, div.post-content {

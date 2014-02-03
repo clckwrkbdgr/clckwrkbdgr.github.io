@@ -103,7 +103,7 @@ for(int x = 0; x < life.width; x++) {
 
 It looks almost excellent. Almost, because some fonts treats block as an ordinary symbol, which is not the full character place height, so it results in ugly breaks.
 
-## Final solution.
+## Final solution
 
 As upper half block if not really the upper half block, why not to replace it with reverse-coloured lower half block? I.e. lets say we print white lower block when lower cell is alive, so to fully paint upper half block we fill background with white and print black lower half block again. Thus upper half of the charater is filled completely without any breaks. And for full block we need to pull the same trick: lets fill the whole character with 'alive' colour.
 

@@ -18,7 +18,7 @@ Ukraine, Donetsk
 <tr><th class="cv-skill-title">Platforms:</th><td>Linux/Unix, Android, Windows.</td></tr>
 <tr><th class="cv-skill-title">Libraries:</th><td>SDL, Boost, Qt4, SDL, OpenGL, PopCap framework</td></tr>
 <tr><th class="cv-skill-title">Tools:</th><td>SVN, Git, unix shell.</td></tr>
-<tr><th class="cv-skill-title">Databases:</th><td>Oracle, Informix,</td></tr>
+<tr><th class="cv-skill-title">Databases:</th><td>Oracle, Informix, SQLite.</td></tr>
 <tr><th class="cv-skill-title">Buzz-words:</th><td>OOP, TDD, design patterns, POSIX sockets.</td></tr>
 </table>
 
