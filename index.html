@@ -1,15 +1,26 @@
 ---
 layout: default
-parent: umi
-title: Recent posts
+parent: owlwood
+title: Content
 ---
-<div class="recent">
-	{% for post in site.posts offset: 0 limit: 10 %}
-	<div class="post">
-		<div class="post-title"><h1><a href="{{ post.url }}">{{ post.title }}</a></h1></div>
-		<div class="post-date">{{ post.date }}</div>
-		<div class="post-content">{{ post.content }}</div>
-	</div>
+<div class="content">
+<ul>
+	{% for post in site.posts %}
+	<li>{{ post.date | date_to_string }} - <a href="{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
-	<p class="content-link"><a href="/content.html">to older posts -></a></p>
+</ul>
+</div>
+<div class="content">
+<h2>Older posts:</h2>
+<ul>
+	<li><a href="/old/civ3.html">Civilization3 under Linux</a></li>
+	<li><a href="/old/client-server.html">Client-server architecture cheat-sheet</a></li>
+	<li><a href="/old/coding-style.html">Coding style</a></li>
+	<li><a href="/old/gamedesign.html">Some thought on game design</a></li>
+	<li><a href="/old/migrating-svn-subproject-to-github.html">Migrating SVN subproject to GitHub</a></li>
+	<li><a href="/old/moc-and-lastfm.html">MOC and Last.fm</a></li>
+	<li><a href="/old/no-sound-in-alsa.html">No sound in ALSA (unable to open slave)</a></li>
+	<li><a href="/old/qt-crosscompilation.html">Qt crosscompilation for Windows in Linux</a></li>
+	<li><a href="/old/qt-project-module-description.html">Qt project file module snippet</a></li>
+</ul>
 </div>
