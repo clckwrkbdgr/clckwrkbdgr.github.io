@@ -5,6 +5,7 @@ all: $(THUMBS)
 
 thumbs/%: images/%
 	convert $^ -thumbnail '200x200>' $@
+	git add $^
 	git add $@
 
 .PHONY: server
