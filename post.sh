@@ -23,5 +23,11 @@ echo "date: $POST_DATE" >>"$FULL_FILE_NAME"
 echo "title: $POST_TITLE" >>"$FULL_FILE_NAME"
 echo "---" >>"$FULL_FILE_NAME"
 echo >>"$FULL_FILE_NAME"
+echo '[![IMAGENAME][IMAGENAME-thumb]] [IMAGENAME]' >>"$FULL_FILE_NAME"
+echo >>"$FULL_FILE_NAME"
+echo '[IMAGENAME]: /images/IMAGENAME' >>"$FULL_FILE_NAME"
+echo '[IMAGENAME-thumb]: /thumbs/IMAGENAME.png' >>"$FULL_FILE_NAME"
+echo >>"$FULL_FILE_NAME"
 
 vim "$FULL_FILE_NAME"
+

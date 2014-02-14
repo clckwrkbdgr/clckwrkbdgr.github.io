@@ -1,4 +1,4 @@
-THUMBS = $(shell grep -ahro --exclude Makefile --exclude *swp --exclude-dir _site --exclude-dir .git 'thumbs/[^ ]\+')
+THUMBS = $(shell grep -ahro --exclude post.sh --exclude Makefile --exclude *swp --exclude-dir _site --exclude-dir .git 'thumbs/[^ ]\+')
 
 all: $(THUMBS)
 	jekyll build
