@@ -1,4 +1,5 @@
 name: umi's tech blog
 url: http://umi0451.github.io
+feed: feed.xml
 markdown: redcarpet
 pygments: true
