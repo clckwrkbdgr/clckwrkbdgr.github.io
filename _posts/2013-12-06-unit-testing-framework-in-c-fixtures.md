@@ -7,7 +7,7 @@ title: "Unit testing framework in C++: fixtures"
 ---
 I have two tests. 
     
-```c++
+{% highlight c++ %}
 TEST(should_hurt_monster_if_cell_hurts)  
 {  
 	Game game;  
@@ -33,11 +33,11 @@ TEST(should_hurt_monster_is_poisoned)
 	EQUAL(game.level.monsters.front().hp, 99);  
 	EQUAL(game.messages, MakeVector("Dummy is poisoned.")("Dummy loses 1 hp.").result);  
 }  
-```
+{% endhighlight %}
     
 DRY principle wouldn't let me use this. There are same code snippets used in both tests, in which game objects prepares. Practically it is setup step for the test. So I want to have prepared game object before I even enter test function, and possibly same object for both of test functions. So I declare a test fixture: 
     
-```c++
+{% highlight c++ %}
 struct GameWithDummy {  
 	Game game;  
 	GameWithDummy() {  
@@ -46,11 +46,11 @@ struct GameWithDummy {
 		game.level.monsters.push_back(Monster::Builder().pos(Point(1, 1)).hp(100).name("dummy").item(armor));  
 	}  
 };  
-```
+{% endhighlight %}
 
 Now I want to use it in test. Sure, it could be passed as a variable like 'fixture', but in this case 'fixture.' prefix would be needed for addressing each field. Which is in turn a violation of DRY principle. Yet, I could left my test as they are (without any prefixes), if each test function were fixture class' function. I inherit new class, Fixture_GameWithDummy, define run() method, and in Test::run() function I just create fixture object and call its run() method, and all testing will be contained in fixture::run(). 
     
-```c++
+{% highlight c++ %}
 #define TEST_FIXTURE(fixture_name, test_name) \  
 	class Fixture_##fixture_name##test_name : public fixture_name { \  
 	public: \  
@@ -68,11 +68,11 @@ Now I want to use it in test. Sure, it could be passed as a variable like 'fixtu
 		fixture.run(); \  
 	} \  
 	void Fixture_##fixture_name##test_name::run()  
-```
+{% endhighlight %}
 
 This step requires all tests to be converted from simple `void(*)()` function to a class, which really isn't complicate anything: 
     
-```c++
+{% highlight c++ %}
 struct Test {  
 	const char * suite;  
 	const char * name;  
@@ -90,13 +90,13 @@ struct Test {
 	}; \  
 	Test_##test_name test_##test_name(current_suite_name(), #test_name); \  
 	void Test_##test_name::run()  
-```
+{% endhighlight %}
 
 Now test runner just need to treat each test object as a class instance, not function, and call it's run() method instead of impl().   
   
 And original two tests are simplified now: 
       
-```c++
+{% highlight c++ %}
 TEST_FIXTURE(GameWithDummy, should_hurt_monster_if_cell_hurts)  
 {  
 	game.level.map.celltypes[0].hurts = true;  
@@ -112,5 +112,5 @@ TEST_FIXTURE(GameWithDummy, should_hurt_monster_is_poisoned)
 	EQUAL(game.level.monsters.front().hp, 99);  
 	EQUAL(game.messages, MakeVector("Dummy is poisoned.")("Dummy loses 1 hp.").result);  
 }  
-```
+{% endhighlight %}
 

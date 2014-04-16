@@ -14,7 +14,7 @@ Alive cell should be printed as visible as it possible: symbols like `O`, `#`, `
 
 ![life-ncurses-plain](/images/life-ncurses-plain.png)
 
-```c++
+{% highlight c++ %}
 for(int y = 0; y < height; ++y) {
 	for(int x = 0; x < width; ++x) {
 		std::cout << (cell(x, y) ? '0' : ' ');
@@ -24,7 +24,7 @@ for(int y = 0; y < height; ++y) {
 for(int y = height; y < window_height; ++y) {
 	std::cout << std::endl;
 }
-```
+{% endhighlight %}
 
 Thus at each iteration screen will be reprinted and scrolled so it will contain the game field only. Notice that outer loop is for `y` coordinate as we must print whole line (which is `x`-loop) and only than proceed to the next `y`-row). 
 
@@ -32,13 +32,13 @@ Major withdraw of this way is that it takes time, a lot of time to scroll the sc
 
 ## Using ncurses
 
-```c++
+{% highlight c++ %}
 for(int x = 0; x < width; ++x) {
 	for(int y = 0; y < height; ++y) {
 		mvaddch(cell(x, y) ? '0' : ' ');
 	}
 }
-```
+{% endhighlight %}
 
 Nothing sophisticated and looks pretty much the same. It's just that it's looks not so good. Rectangles (or squares) should fit perfectly.
 
@@ -48,7 +48,7 @@ One way to output rectangle in place of character is to use coloured background 
 
 ![life-ncurses-colour](/images/life-ncurses-colour.png)
 
-```c++
+{% highlight c++ %}
 start_color();
 init_pair(1, COLOR_BLACK, COLOR_BLUE);
 for(int x = 0; x < width; ++x) {
@@ -56,7 +56,7 @@ for(int x = 0; x < width; ++x) {
 		mvaddch(cell(x, y) ? ' ' | COLOR_PAIR(1) : ' ');
 	}
 }
-```
+{% endhighlight %}
 
 It is rectangles all right, but squares still would be best fit.
 
@@ -66,18 +66,18 @@ Luckily, such possility exists and uses Unicode symbols. Specifically, UPPER HAL
 
 Ncurses' character type, `char_t` is just a typedef for plain integer. It's first byte stores the character itself (8-bit encoding is used, depending on your terminal settings), other bytes is taken by various attributes like colour, blinking, bold, underline etc. Unicode symbols can have more than one character to display, so ncursesw presents a structure for that, `cchar_t`. Fields that we are interested of are `cchar_t::attr` for attributes (of `attr_t` type) and `cchar_t::chars` array of `char_t`, which stores all characters to display.
 
-```c++
+{% highlight c++ %}
 cchar_t t;
 t.attr = COLOR_PAIR(1);
 t.chars[0] = 0x2584; // LOWER HALF BLOCK
 t.chars[1] = 0; // Null-terminating.
-```
+{% endhighlight %}
 
 And the loops are drastically changed. Prior to this we print one row using one iteration, but now we have two cells printed in one screen character, so we need to get two subsequent row at a time.
 
 ![life-ncurses-blocks](/images/life-ncurses-blocks.png)
 
-```c++
+{% highlight c++ %}
 for(int x = 0; x < life.width; x++) {
 	for(int y = 0; y < life.height; y += 2) {
 		int up = cell(x, y);
@@ -99,7 +99,7 @@ for(int x = 0; x < life.width; x++) {
 		mvadd_wch(y / 2, x, &t); // This is also changed.
 	}
 }
-```
+{% endhighlight %}
 
 It looks almost excellent. Almost, because some fonts treats block as an ordinary symbol, which is not the full character place height, so it results in ugly breaks.
 
@@ -110,7 +110,7 @@ As upper half block if not really the upper half block, why not to replace it wi
 ![life-ncurses-final](/images/life-ncurses-final.png)
 
 
-```c++
+{% highlight c++ %}
 init_pair(1, COLOR_BLUE, COLOR_BLACK); // This is an ordinary colours.
 init_pair(2, COLOR_BLACK, COLOR_BLUE); // This is reversed ones.
 for(int x = 0; x < life.width; x++) {
@@ -129,4 +129,4 @@ for(int x = 0; x < life.width; x++) {
 		mvadd_wch(y / 2, x, &t);
 	}
 }
-```
+{% endhighlight %}

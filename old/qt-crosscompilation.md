@@ -14,14 +14,14 @@ Requirements:
 
 In order to make crosscompilation possible one must create new spec for it. To make this task a bit easier it is more convinient to copy an existing one, for example, `win32-g++` (here and further `$QT_WIN` points to Qt SDK for Windows installation path and `$QT_LINUX` - to Qt SDK for Linux):
 
-```
+{% endhighlight %}
 $ cd $QT_WIN/qt/mkspecs/
 $ cp -R win32-g++/* win32-x-g++/
-```
+{% endhighlight %}
 
 Next, some changes must be done in _win32-x-g++/qmake.conf_:
 
-```
+{% endhighlight %}
 QMAKE_SH = sh
 QMAKE_CC = i586-mingw32msvc-gcc
 QMAKE_CXX = i586-mingw32msvc-g++
@@ -35,14 +35,14 @@ QMAKE_UIC = $QT_LINUX/qt/bin/uic
 QMAKE_IDC = $QT_LINUX/qt/bin/idc
 QMAKE_RC = i586-mingw32msvc-windres
 QMAKE_STRIP = i586-mingw32msvc-strip
-```
+{% endhighlight %}
 
 Building project now is easy. All that should be done is setting of _QMAKESPEC_ environment variable. This variable is checked by qmake on the startup. Unsetting it  will return Qt spec target to the Linux one (that is, system's default).
 
-```
+{% endhighlight %}
 $ export QTDIR=/opt/qtsdk-win/Desktop/Qt/4.7.3/mingw
 $ export QMAKESPEC=$QTDIR/mkspecs/win32-x-g++
 $ make clean distclean # optional; used for cleaning from previous builds
 $ qmake # a linux one; all crosscompilation work is by fact done in spec file
 $ make
-```
+{% endhighlight %}

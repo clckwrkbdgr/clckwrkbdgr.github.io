@@ -8,18 +8,18 @@ title: "Unit testing framework in C++: init"
 _My goal was to create simple unit testing framework, possibly one header only. It should support most of usual unit testing features: tests (of course), various assertions, suites, fixtures. Also I wanted it to be as less verbose as possible in test declaration. Probably just to write `TEST(test_name) { ... }` to be sufficient._  
 The simplest unit testing could be done using just assert macros, like this:   
 
-```c++
+{% highlight c++ %}
 void run_all_tests()  
 {  
 	assert(to_string(1) == "1");  
 	assert(to_string('A') == "A");  
 	assert(to_string("Text") == "Text");  
 }  
-```
+{% endhighlight %}
 
 At some point, function will grow too big to comprehend. Probably it should be divided into separated tests:   
 
-```c++
+{% highlight c++ %}
 void should_convert_int_to_string()  
 {  
 	assert(to_string(1) == "1");  
@@ -41,11 +41,11 @@ void run_all_tests()
 	should_convert_char_to_string();  
 	should_convert_string_to_string();  
 }  
-```
+{% endhighlight %}
     
 That way all tests invocations stored in one place. Disadvantages remain: function must be explicitly defined which involves lot of includes, extern defines etc. It would be nice if test runner could invoke function without even knowing its name. One way to do it is to use pointer to function. They could be stored in pointer list, which also simplifies invokation.   
 
-```c++
+{% highlight c++ %}
 typedef void(*TestFunction)();  
   
 std::list & all_tests()  
@@ -80,11 +80,11 @@ void run_all_tests()
 		*test();  
 	}  
 }  
-```
+{% endhighlight %}
 
 It would be a lot easier to add new test if appending it to the list were as closer to function declaration as possible. But in global scope, outside of all function such statement couldn't be executed. Only definitions and declarations. So one way to get around it is to add function to the list in some variable declaration:   
 
-```c++
+{% highlight c++ %}
 struct AddTest;  
 std::list & all_tests();  
 struct AddTest {  
@@ -114,11 +114,11 @@ void run_all_tests()
 		test->impl();  
 	}  
 }  
-```
+{% endhighlight %}
     
 Almost what I wanted. Except it would be nice also see some pretty output like test name. And it could be wrapped in macro:   
 
-```c++
+{% highlight c++ %}
 struct AddTest {  
 	std::string name;  
 	TestFunction impl;  
@@ -146,5 +146,5 @@ void run_all_tests(int argc, char ** argv)
 		test->impl();  
 	}  
 }  
-```
+{% endhighlight %}
 

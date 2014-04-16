@@ -6,7 +6,7 @@ title: Defining a number of small 2D char arrays
 
 In libchthon, class `Map<T>` is able to store 2D arrays of any type. Usually when it comes to testing maps (like FOV, rays, pathfinding) the simplest way to define such map is using strings:
 
-```c++
+{% highlight c++ %}
 const std::string data = 
 	"         "
 	"         "
@@ -19,12 +19,12 @@ const std::string data =
 	"         "
 	;
 Map<char> map(9, 9, data.begin(), data.end());
-```
+{% endhighlight %}
 
 But when there are a few maps like that, they're consuming code lines. In the meantime, there are plenty of room just to the right of the map. Why not to use this space like that:
 
 
-```c++
+{% highlight c++ %}
 const std::string data[] = {
    "         ","         ","         ",
    "         ","         ","         ",
@@ -36,7 +36,7 @@ const std::string data[] = {
    "         ","         ","         ",
    "         ","         ","         ",
 };
-```
+{% endhighlight %}
 
 Folded up the strings are arranged alternately: `1, 2, 3, 1, 2, 3, 1, 2, 3, ...` That is, strings that defines specified map are located at each `COUNT` position stared from some index.
 
@@ -49,7 +49,7 @@ As I need the result as a string (or, rather, as an iterator pair, to save memor
 
 Incrementing operator of iterator, designed for such walkthrough:
 
-```c++
+{% highlight c++ %}
 InterleavedCharMap::const_iterator & InterleavedCharMap::const_iterator::operator++()
 {
 	++it;
@@ -66,5 +66,5 @@ InterleavedCharMap::const_iterator & InterleavedCharMap::const_iterator::operato
 	}
 	return *this;
 }
-```
+{% endhighlight %}
 

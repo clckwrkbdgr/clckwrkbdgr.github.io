@@ -43,7 +43,7 @@ This is almost full list of C++ related compiler warning flags I found for GCC 4
 
 Complete warning list code for Makefile:
 
-```c++
+{% highlight c++ %}
 WARNINGS = -pedantic -Werror -Wall -Wextra -Wformat=2 -Wmissing-include-dirs
 	-Wswitch-default -Wswitch-enum -Wuninitialized -Wunused -Wfloat-equal
 	-Wundef -Wno-endif-labels -Wshadow -Wcast-qual -Wcast-align -Wconversion
@@ -52,4 +52,4 @@ WARNINGS = -pedantic -Werror -Wall -Wextra -Wformat=2 -Wmissing-include-dirs
 	-Wdouble-promotion -Wzero-as-null-pointer-constant -Wuseless-cast
 	-Wvarargs -Wsuggest-attribute=pure -Wsuggest-attribute=const
 	-Wsuggest-attribute=noreturn -Wsuggest-attribute=format
-```
+{% endhighlight %}

@@ -1,8 +1,8 @@
 .hll { background-color: #000000 }
 
-.c  { color: #0088ff; font-style: italic } /* Comment */
-.cm { color: #0088ff; font-style: italic } /* Comment.Multiline */
-.c1 { color: #0088ff; font-style: italic } /* Comment.Single */
+.c  { color: #0088ff; } /* font-style: italic Comment */
+.cm { color: #0088ff; } /* font-style: italic Comment.Multiline */
+.c1 { color: #0088ff; } /* font-style: italic Comment.Single */
 .cp { color: #0088ff; font-weight: bold } /* Comment.Preproc */
 .err { color: #000000; background-color: #ff0000 } /* Error */
 

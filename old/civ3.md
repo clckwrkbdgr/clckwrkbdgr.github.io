@@ -12,10 +12,10 @@ Following problems has been encountered:
 It will allow game to run using current resolution; resolution should be >= Civ3's standard one (1024x768).
 * Opening movie also can corrupt display. Line in the INI-file: `PlayIntro=0`
 * Game's internal error 13 means that it couldn't find font file LSANS.FOT, which serves as load helper for LSANS.TTF. Following commands fix that:
-```
+{% endhighlight %}
 $ cp LSANS.TTF LSANS.FOT
 $ sudo chattr +i LSANS.FOT # So it can't be rewritten or deleted.
-```
+{% endhighlight %}
 
 Otherwise, installs and runs perfectly, maybe a bit slow though.
 
