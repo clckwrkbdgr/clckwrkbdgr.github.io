@@ -18,13 +18,13 @@ Extracting subproject
 
 First, we will need to do whole dump of svnrepo:
 
-{% endhighlight %}
+{% highlight bash %}
 $ svnadmin dump /path/to/svn &gt;repo-dumpfile
 {% endhighlight %}
 
 Then, we will filter that dumpfile through `svndumpfilter` in order to exclude all subdirs except for `subproject`.
 
-{% endhighlight %}
+{% highlight java %}
 $ svndumpfilter --drop-empty-revs --renumber-revs include subproject &lt;repo-dumpfile &gt;subproject-dumpfile
 {% endhighlight %}
 
@@ -40,7 +40,7 @@ Preparing for conversion
 
 Now we have a correct SVN repo dump so we could restore it as an actual SVN repo. Though, it's structure is a bit complicated:
 
-{% endhighlight %}
+{% highlight text %}
 subprojectrepo
 `- subproject
 	|- branches
@@ -50,7 +50,7 @@ subprojectrepo
 
 That is, there is a dir named `subproject` in the repo's root. In order to successfully convert it to Git repo with tags and branches converted from file (as in SVN) to actual tags and branches (as in Git), you might want to change repo structure to following one:
 
-{% endhighlight %}
+{% highlight text %}
 subprojectrepo
 |- branches
 |- tags
@@ -65,14 +65,14 @@ Restoring SVN repo
 
 As simple as it is:
 
-{% endhighlight %}
+{% highlight bash %}
 $ svnadmin create subproject # Check that dir with the same name does not already exists.
 $ svnadmin load subproject &lt;subproject-dumpfile
 {% endhighlight %}
 
 You can now ensure that repository was restored correct by listing it's content:
 
-{% endhighlight %}
+{% highlight bash %}
 $ svn list file:///path/to/subproject/repo
 {% endhighlight %}
 
@@ -81,7 +81,7 @@ Converting to Git repo
 
 svn2git utility makes a Git repo in current working directory, so create some empty dir and cd to it:
 
-{% endhighlight %}
+{% highlight bash %}
 $ mkdir subproject-git
 $ cd subproject-git
 $ svn2git file:///path/to/subproject/repo
@@ -91,14 +91,14 @@ $ svn2git file:///path/to/subproject/repo
 
 If you want to change authors' names, create conversion file for them somewhere with content like:
 
-{% endhighlight %}
+{% highlight text %}
 svnauthor = Git Author &lt;gitauthor@example.com&gt;
 ...
 {% endhighlight %}
 
 And then pass this file to svn2git:
 
-{% endhighlight %}
+{% highlight bash %}
 $ svn2git file:///path/to/subproject/repo --authors /path/to/authors.txt
 {% endhighlight %}
 
@@ -107,11 +107,11 @@ Pushing repo to GitHub
 
 * Create a repo on GitHub.
 * Add a remote for the repo:
-{% endhighlight %}
+{% highlight bash %}
 $ git remote add origin git@github.com:GITHUB_USERNAME/REPO_NAME.git
 {% endhighlight %}
 * Push.
-{% endhighlight %}
+{% highlight bash %}
 $ git push origin master --tags
 {% endhighlight %}
 

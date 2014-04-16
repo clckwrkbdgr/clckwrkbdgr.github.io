@@ -6,7 +6,7 @@ title: No sound in ALSA (unable to open slave)
 ---
 After upgrading to Debian Wheezy and deinstalling pulseaudio I encountered problem with ALSA, specifically with mocp:
 
-{% endhighlight %}
+{% highlight bash %}
 $ mocp
 Running the server...
 Trying JACK...
@@ -21,7 +21,7 @@ FATAL_ERROR: Server exited!
 
 The solution is to create a file named `.asoundrc` in your home folder and paste this in:
 
-{% endhighlight %}
+{% highlight text %}
 pcm.dsp {
 	type plug
 	slave.pcm "dmix"
@@ -30,7 +30,7 @@ pcm.dsp {
 
 Then alsa service should be restarted:
 
-{% endhighlight %}
+{% highlight bash %}
 $ sudo service alsa-utils restart
 {% endhighlight %}
 

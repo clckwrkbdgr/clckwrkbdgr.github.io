@@ -6,7 +6,7 @@ title: MOC and Last.fm
 ---
 The [moc](http://moc.daper.net/) player itself doesn't support [scrobbling](http://www.last.fm/). But there is an option to execute an external command on each track change:
 
-{% endhighlight %}
+{% highlight text %}
 OnSongChange = "/path/to/external/command %a %t %d %r"
 {% endhighlight %}
 Arguments are substituted using current song (that is, the song that playing is changed to) info:
@@ -20,19 +20,19 @@ Each parameter will be properly escaped. Os course, if there no info about some 
 
 Perfect script for above task can be found at [http://lukeplant.me.uk/blog/posts/moc-and-last-fm/](http://lukeplant.me.uk/blog/posts/moc-and-last-fm/). Put it anywhere you like and make it executable.
 
-{% endhighlight %}
+{% highlight bash %}
 $ chmod +x moc_submit_lastfm
 {% endhighlight %}
 
 Now it can be specified in the MOC confing file:
 
-{% endhighlight %}
+{% highlight text %}
 OnSongChange = "/path/to/moc_submit_lastfm --artist %a --title %t --length %d --album %r"
 {% endhighlight %}
 
 Next what will need is a scrobbler itself. The most common one under Linux and the one that is used by script is `lastfmsubmitd`. Upon installation it may ask user to fill some data like Last.fm user name and password, and user group. The latter one by default is called `lastfm`. The only users who can sumbit info to Last.fm. are the ones who are present in group `lastfm`
 
-{% endhighlight %}
+{% highlight bash %}
 $ sudo apt-get install lastfmsubmitd
 $ sudo addgroup lastfm
 $ sudo adduser $YOUR_USER lastfm # This will add user to the group
@@ -40,7 +40,7 @@ $ sudo adduser $YOUR_USER lastfm # This will add user to the group
 
 Now mocp should be completely restarted in order to re-read it's config:
 
-{% endhighlight %}
+{% highlight bash %}
 $ mocp -x && mocp
 {% endhighlight %}
 

@@ -25,7 +25,7 @@ Giving things names
 
 Usage of Hungarian notation or other prefixes/suffixes like buttonRun, urlEdit is redundant due to their unambiguous meaning during actual using (especially when stored in containers like Qt UI or Android layouts):
 
-{% endhighlight %}
+{% highlight java %}
 ui.url.setText(...);
 {% endhighlight %}
 
