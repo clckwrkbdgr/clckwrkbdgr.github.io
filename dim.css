@@ -64,14 +64,21 @@ hr {
 }
 div.body {
 	font-size: 14px;
-	padding: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 800px;
+	width: 100%;
 }
-div.main, div.footer, div.header {
-	overflow: hidden;
+div.menu {
+	position: fixed;
+	top: 0px;
+	width: 150px;
+	padding: 30px 30px 30px 20px;
+}
+div.main {
+	padding: 20px 0px 30px 10px;
+	margin-left: 200px;
+	width: auto;
+	max-width: 800px;
 }
 .NOSPAM {
 	display: none;
 }
+/* * { border: solid; border-width: 1px; } */
