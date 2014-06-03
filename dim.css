@@ -1,3 +1,4 @@
+/* * { border: solid; border-width: 1px; } */
 body {
 	background-color: #0a0a0a;
 	color: #aaaaaa;
@@ -81,4 +82,18 @@ div.main {
 .NOSPAM {
 	display: none;
 }
-/* * { border: solid; border-width: 1px; } */
+table, td {
+	border: 1px solid #dddddd;
+	border-collapse: collapse;
+}
+.screenshot {
+	padding: 5px;
+	height: 100px;
+	text-align: center;
+	vertical-align: middle;
+}
+.description {
+	padding: 5px;
+	text-align: left;
+	vertical-align: top;
+}
