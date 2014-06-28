@@ -16,6 +16,6 @@ To get rid of this prompt and to keep passphrase permanently, put this line into
 
 And then run command in shell:
 
-	git-add ~/.ssh/id_rsa
+	ssh-add ~/.ssh/id_rsa
 
 It will ask passphrase for the last time and link it with identity file permanently.
