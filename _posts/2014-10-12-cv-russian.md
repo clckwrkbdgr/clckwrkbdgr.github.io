@@ -20,7 +20,7 @@ title: Резюме
 ## Профессиональный опыт
 
 C++ Developer  
-**ISD, Ltd**, Oct 2014 - now
+**ISD, Ltd**, Oct 2014 - текущее время
 
 C++ Developer  
 **MEGASOFT, Ltd**, Feb 2013 - Dec 2013
