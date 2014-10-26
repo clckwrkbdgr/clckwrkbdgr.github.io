@@ -12,8 +12,8 @@ title: Резюме
 
 **Языки программирования**: C/C++, Python, SQL, XML, Java.  
 **Платформы**: Linux/Unix, Android, Windows.  
-**Библиотеки**: SDL, Boost, Qt4, SDL, OpenGL, PopCap framework  
-**Инструментарий**: SVN, Git, unix shell.  
+**Библиотеки**: STL, Boost, Qt4, SDL, OpenGL, PopCap framework  
+**Инструментарий**: SVN, Git, unix shell scripting.  
 **Базы данных**: Oracle, Informix, SQLite.  
 **Технологии**: ООП, TDD, шаблоны проектирования, POSIX sockets.  
 
@@ -21,6 +21,8 @@ title: Резюме
 
 C++ Developer  
 **ISD, Ltd**, Oct 2014 - текущее время
+
+* Поддерживал приложение для управления медицинской лабораторией.
 
 C++ Developer  
 **MEGASOFT, Ltd**, Feb 2013 - Dec 2013
