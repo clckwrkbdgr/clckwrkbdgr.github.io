@@ -1,6 +1,5 @@
 ---
 layout: default
-date: 2014-10-12 22:10:47
 title: Резюме
 ---
 
@@ -12,7 +11,7 @@ title: Резюме
 
 **Языки программирования**: C/C++, Python, SQL, XML, Java.  
 **Платформы**: Linux/Unix, Android, Windows.  
-**Библиотеки**: STL, Boost, Qt4, SDL, OpenGL, PopCap framework  
+**Библиотеки**: STL, Boost, Qt4, SDL, OpenGL, PopCap framework.  
 **Инструментарий**: SVN, Git, unix shell scripting.  
 **Базы данных**: Oracle, Informix, SQLite.  
 **Технологии**: ООП, TDD, шаблоны проектирования, POSIX sockets.  
@@ -20,7 +19,7 @@ title: Резюме
 ## Профессиональный опыт
 
 C++ Developer  
-**ISD, Ltd**, Oct 2014 - текущее время
+**ISD, Ltd**, Oct 2014 - настоящее время
 
 * Поддерживал приложение для управления медицинской лабораторией.
 

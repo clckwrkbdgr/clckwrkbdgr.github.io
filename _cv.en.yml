@@ -1,3 +1,5 @@
+title: CV
+
 name: Igor Chaika
 location: Ukraine, Donetsk
 email: umi<span class="NOSPAM">NOSPAM</span>0451 at gmail com
@@ -7,6 +9,12 @@ cv:
     techs: Technical Proficiences
     exp: Professional experience
     edu: Education
+    lang: Languages
+    os: Platforms
+    lib: Libraries
+    tool: Tools
+    db: Databases
+    buzz: Buzz-words
 
 ## Technical proficiences
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CV
+title: {title}
 ---
 
 # {name}
@@ -9,12 +9,12 @@ title: CV
 
 ## {cv.techs}
 
-**Languages**: {lang.cpp}, {lang.python}, {lang.sql}, {lang.xml}, {lang.java}.  
-**Platforms**: {os.nix}, {os.android}, {os.win}.  
-**Libraries**: {lib.stl}, {lib.boost}, {lib.qt4}, {lib.sdl}, {lib.opengl}, {lib.popcap}.  
-**Tools**: {tool.svn}, {tool.git}, {tool.shell}.  
-**Databases**: {db.oracle}, {db.informix}, {db.sqlite}.  
-**Buzz-words**: {buzz.oop}, {buzz.tdd}, {buzz.patterns}, {buzz.sockets}.  
+**{cv.lang}**: {lang.cpp}, {lang.python}, {lang.sql}, {lang.xml}, {lang.java}.  
+**{cv.os}**: {os.nix}, {os.android}, {os.win}.  
+**{cv.lib}**: {lib.stl}, {lib.boost}, {lib.qt4}, {lib.sdl}, {lib.opengl}, {lib.popcap}.  
+**{cv.tool}**: {tool.svn}, {tool.git}, {tool.shell}.  
+**{cv.db}**: {db.oracle}, {db.informix}, {db.sqlite}.  
+**{cv.buzz}**: {buzz.oop}, {buzz.tdd}, {buzz.patterns}, {buzz.sockets}.  
 
 ## {cv.exp}
 
