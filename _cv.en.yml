@@ -1,0 +1,102 @@
+name: Igor Chaika
+location: Ukraine, Donetsk
+email: umi<span class="NOSPAM">NOSPAM</span>0451 at gmail com
+phone: 099-047-0156
+
+cv:
+    techs: Technical Proficiences
+    exp: Professional experience
+    edu: Education
+
+## Technical proficiences
+
+lang:
+    cpp: C/C++
+    python: Python
+    sql: SQL
+    xml: XML
+    java: Java
+os:
+    nix: Linux/Unix
+    android: Android
+    win: Windows
+lib:
+    stl: STL
+    boost: Boost
+    qt4: Qt4
+    sdl: SDL
+    opengl: OpenGL
+    popcap: PopCap framework
+tool:
+    svn: SVN
+    git: Git
+    shell: unix shell scripting
+db:
+    oracle: Oracle
+    informix: Informix
+    sqlite: SQLite
+buzz:
+    oop: OOP
+    tdd: TDD
+    patterns: design patterns
+    sockets: POSIX sockets
+
+## Professional Experience
+
+isd:
+    position: C++ Developer  
+    name: ISD, Ltd
+    start: Oct 2014
+    quit: present
+    responsibility:
+        support: Supported medical laboratory management application.
+
+megasoft:
+    position: C++ Developer  
+    name: MEGASOFT, Ltd
+    start: Feb 2013
+    quit: Dec 2013
+    achievement:
+        accountant: "Developed accountant calculations module. Module fetches customer usage data, performs heavy calculations and inserts calculated invoice records back to database. Some optimizations were used in order to increase performance, such as: data caching, SQL query optimizations."
+        mobileserver: Developed task exchanging server module for mobile client. Module was designed for sending and receiving controller tasks. Protocol used simple XML packages along with file (video/images) transfer and some simple encryption.
+    responsibility:
+        sql: Wrote SQL queries for server data processing functions.
+        support: Supported server part of billing system. Designed application-wide option storage.
+        optimization: Optimized server performance using database optimizations and some language-specific optimizations. Reduced compiling time by 20%.
+
+lognet:
+    position: Junior C++ Developer  
+    name: LOGNET Systems
+    start: Aug 2011
+    quit: Oct 2011
+    achievement:
+        bill: Developed module for XML bill generation for billing database, optimized its performance time and memory consumption.
+    responsibility:
+        support: Supported backend modules of billing system.
+
+sytoss:
+    position: Junior C++ Developer  
+    name: SYTOSS, Ltd
+    start: Feb 2011
+    quit: Aug 2011
+    achievement:
+        transfer: Developed server module for data transfer between different billing system.
+    responsibility:
+        support: Supported backend modules of billing system.
+
+pfu:
+    position: Pre-diploma practice, recurrent job  
+    name: Head office of Ukrainian Pension fund in Donetsk
+    start: 2010
+    quit: 2014
+    achievement:
+        reference: Developed reference materials management software using C++/Qt4. Application stores domain-specific rich formatted pages and arranges them using hierachical structure.
+        utils: Developed various utilities for text data processing using Python. Utilities works with large amount of files and designed for easy extension work.
+
+## Education
+
+edu:
+    degree: Specialist in applied mathematics  
+    school: Donetsk National University
+    graduation: 2010
+    diploma: Developed image recognition application as a part of diploma work. Application uses highly specialized recoginition methods and renders results on 3d-scene using OpenGL.

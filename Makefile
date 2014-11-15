@@ -1,7 +1,10 @@
 THUMBS = $(shell grep -ahro --exclude _new_post.sh --exclude Makefile --exclude *swp --exclude-dir _site --exclude-dir .git 'thumbs/[^ "]\+')
 
-all: $(THUMBS)
+all: cv $(THUMBS)
 	jekyll --pygments
+
+cv:
+	python3 _cv.py
 
 thumbs/%: images/%
 	convert $^ -thumbnail '200x200>' $@
