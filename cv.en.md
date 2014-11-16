@@ -23,6 +23,10 @@ C++ Developer
 
 * Supported medical laboratory management application.
 
+**Environment**: Windows, AIX, C++, MFC, CORBA, VS2005, VS2012.
+
+----
+
 C++ Developer  
 **MEGASOFT, Ltd**, Feb 2013 - Dec 2013
 
@@ -32,11 +36,19 @@ C++ Developer
 * Supported server part of billing system. Designed application-wide option storage.
 * Optimized server performance using database optimizations and some language-specific optimizations. Reduced compiling time by 20%.
 
+**Environment**: Linux, C++, STL, Boost, Informix, SQL, XML.
+
+----
+
 Junior C++ Developer  
 **LOGNET Systems**, Aug 2011 - Oct 2011
 
 * Developed module for XML bill generation for billing database, optimized its performance time and memory consumption.
 * Supported backend modules of billing system.
+
+**Environment**: AIX, C++, STL, Oracle DB, SQL, XML.
+
+----
 
 Junior C++ Developer  
 **SYTOSS, Ltd**, Feb 2011 - Aug 2011
@@ -44,11 +56,17 @@ Junior C++ Developer
 * Developed server module for data transfer between different billing system.
 * Supported backend modules of billing system.
 
+**Environment**: AIX, C++, STL, Oracle DB, SQL, XML.
+
+----
+
 Pre-diploma practice, recurrent job  
 **Head office of Ukrainian Pension fund in Donetsk**, 2010 - 2014
 
 * Developed reference materials management software using C++/Qt4. Application stores domain-specific rich formatted pages and arranges them using hierachical structure.
 * Developed various utilities for text data processing using Python. Utilities works with large amount of files and designed for easy extension work.
+
+**Environment**: Windows, Python, C++, Qt4.
 
 ## Education
 

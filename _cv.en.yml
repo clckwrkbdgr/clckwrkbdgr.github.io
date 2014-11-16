@@ -15,6 +15,7 @@ cv:
     tool: Tools
     db: Databases
     buzz: Buzz-words
+    env: Environment
 
 ## Technical proficiences
 
@@ -58,6 +59,7 @@ isd:
     quit: present
     responsibility:
         support: Supported medical laboratory management application.
+    environment: Windows, AIX, C++, MFC, CORBA, VS2005, VS2012.
 
 megasoft:
     position: C++ Developer  
@@ -71,6 +73,7 @@ megasoft:
         sql: Wrote SQL queries for server data processing functions.
         support: Supported server part of billing system. Designed application-wide option storage.
         optimization: Optimized server performance using database optimizations and some language-specific optimizations. Reduced compiling time by 20%.
+    environment: Linux, C++, STL, Boost, Informix, SQL, XML.
 
 lognet:
     position: Junior C++ Developer  
@@ -81,6 +84,7 @@ lognet:
         bill: Developed module for XML bill generation for billing database, optimized its performance time and memory consumption.
     responsibility:
         support: Supported backend modules of billing system.
+    environment: AIX, C++, STL, Oracle DB, SQL, XML.
 
 sytoss:
     position: Junior C++ Developer  
@@ -91,6 +95,7 @@ sytoss:
         transfer: Developed server module for data transfer between different billing system.
     responsibility:
         support: Supported backend modules of billing system.
+    environment: AIX, C++, STL, Oracle DB, SQL, XML.
 
 pfu:
     position: Pre-diploma practice, recurrent job  
@@ -100,6 +105,7 @@ pfu:
     achievement:
         reference: Developed reference materials management software using C++/Qt4. Application stores domain-specific rich formatted pages and arranges them using hierachical structure.
         utils: Developed various utilities for text data processing using Python. Utilities works with large amount of files and designed for easy extension work.
+    environment: Windows, Python, C++, Qt4.
 
 ## Education
 

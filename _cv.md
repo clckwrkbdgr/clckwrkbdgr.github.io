@@ -23,6 +23,10 @@ title: {title}
 
 * {isd.responsibility.support}
 
+**{cv.env}**: {isd.environment}
+
+----
+
 {megasoft.position}  
 **{megasoft.name}**, {megasoft.start} - {megasoft.quit}
 
@@ -32,11 +36,19 @@ title: {title}
 * {megasoft.responsibility.support}
 * {megasoft.responsibility.optimization}
 
+**{cv.env}**: {megasoft.environment}
+
+----
+
 {lognet.position}  
 **{lognet.name}**, {lognet.start} - {lognet.quit}
 
 * {lognet.achievement.bill}
 * {lognet.responsibility.support}
+
+**{cv.env}**: {lognet.environment}
+
+----
 
 {sytoss.position}  
 **{sytoss.name}**, {sytoss.start} - {sytoss.quit}
@@ -44,11 +56,17 @@ title: {title}
 * {sytoss.achievement.transfer}
 * {sytoss.responsibility.support}
 
+**{cv.env}**: {sytoss.environment}
+
+----
+
 {pfu.position}  
 **{pfu.name}**, {pfu.start} - {pfu.quit}
 
 * {pfu.achievement.reference}
 * {pfu.achievement.utils}
+
+**{cv.env}**: {pfu.environment}
 
 ## {cv.edu}
 
