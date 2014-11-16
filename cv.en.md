@@ -5,7 +5,7 @@ title: CV
 
 # Igor Chaika
 
-Ukraine, Donetsk • umi<span class="NOSPAM">NOSPAM</span>0451 at gmail com • 099-047-0156
+Ukraine, Dnipropetrovsk • umi<span class="NOSPAM">NOSPAM</span>0451 at gmail com • 099-047-0156
 
 ## Technical Proficiences
 

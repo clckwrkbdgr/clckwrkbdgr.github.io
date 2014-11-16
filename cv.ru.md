@@ -5,7 +5,7 @@ title: Резюме
 
 # Игорь Чайка
 
-Украина, Донецк • umi<span class="NOSPAM">NOSPAM</span>0451 at gmail com • 099-047-0156
+Украина, Днепропетровск • umi<span class="NOSPAM">NOSPAM</span>0451 at gmail com • 099-047-0156
 
 ## Технические навыки и умения
 
