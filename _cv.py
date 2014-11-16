@@ -44,6 +44,9 @@ def main():
 			data = to_struct('CVTemplate', data)
 			with open(dest_filename, "w") as f:
 				f.write(template.format(**(data.__dict__)))
+		except KeyError as e:
+			print("{0}: missing {1} group".format(filename, e))
+			return 1
 		except AttributeError as e:
 			print("{0}: {1}".format(filename, e))
 			return 1

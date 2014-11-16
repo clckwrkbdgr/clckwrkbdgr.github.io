@@ -10,11 +10,11 @@ Ukraine, Dnipropetrovsk • umi<span class="NOSPAM">NOSPAM</span>0451 at gmail c
 ## Technical Proficiences
 
 **Languages**: C/C++, Python, SQL, XML, Java.  
-**Platforms**: Linux/Unix, Android, Windows.  
+**Platforms**: Linux, AIX, Android, Windows.  
 **Libraries**: STL, Boost, Qt4, SDL, OpenGL, PopCap framework.  
-**Tools**: SVN, Git, unix shell scripting.  
+**Tools**: SVN, Git, unix shell scripting, Visual Studio 2005, Visual Studio 2012.  
 **Databases**: Oracle, Informix, SQLite.  
-**Buzz-words**: OOP, TDD, design patterns, POSIX sockets.  
+**Technologies**: OOP, TDD, design patterns, POSIX sockets.  
 
 ## Professional experience
 
@@ -23,7 +23,8 @@ C++ Developer
 
 * Supported medical laboratory management application.
 
-**Environment**: Windows, AIX, C++, MFC, CORBA, VS2005, VS2012.
+**Environment**: Windows, AIX, Visual Studio 2005, Visual Studio 2012.  
+**Technologies**: C++, MFC, CORBA.
 
 ----
 
@@ -36,7 +37,8 @@ C++ Developer
 * Supported server part of billing system. Designed application-wide option storage.
 * Optimized server performance using database optimizations and some language-specific optimizations. Reduced compiling time by 20%.
 
-**Environment**: Linux, C++, STL, Boost, Informix, SQL, XML.
+**Environment**: Linux.
+**Technologies**: C++, STL, Boost, Informix, SQL, XML.
 
 ----
 
@@ -46,7 +48,8 @@ Junior C++ Developer
 * Developed module for XML bill generation for billing database, optimized its performance time and memory consumption.
 * Supported backend modules of billing system.
 
-**Environment**: AIX, C++, STL, Oracle DB, SQL, XML.
+**Environment**: AIX.  
+**Technologies**: C++, STL, Oracle, SQL, XML.
 
 ----
 
@@ -56,7 +59,8 @@ Junior C++ Developer
 * Developed server module for data transfer between different billing system.
 * Supported backend modules of billing system.
 
-**Environment**: AIX, C++, STL, Oracle DB, SQL, XML.
+**Environment**: AIX.  
+**Technologies**: C++, STL, Oracle, SQL, XML.
 
 ----
 
@@ -66,7 +70,8 @@ Pre-diploma practice, recurrent job
 * Developed reference materials management software using C++/Qt4. Application stores domain-specific rich formatted pages and arranges them using hierachical structure.
 * Developed various utilities for text data processing using Python. Utilities works with large amount of files and designed for easy extension work.
 
-**Environment**: Windows, Python, C++, Qt4.
+**Environment**: Windows.  
+**Technologies**: C++, Qt4, Python.
 
 ## Education
 

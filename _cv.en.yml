@@ -6,7 +6,7 @@ email: umi<span class="NOSPAM">NOSPAM</span>0451 at gmail com
 phone: 099-047-0156
 
 cv:
-    techs: Technical Proficiences
+    skills: Technical Proficiences
     exp: Professional experience
     edu: Education
     lang: Languages
@@ -14,23 +14,27 @@ cv:
     lib: Libraries
     tool: Tools
     db: Databases
-    buzz: Buzz-words
+    tech: Technologies
     env: Environment
+    usedtechs: Technologies
 
 ## Technical proficiences
 
 lang:
-    cpp: C/C++
+    c: C
+    cpp: C++
     python: Python
     sql: SQL
     xml: XML
     java: Java
 os:
-    nix: Linux/Unix
+    linux: Linux
+    aix: AIX
     android: Android
     win: Windows
 lib:
     stl: STL
+    mfc: MFC
     boost: Boost
     qt4: Qt4
     sdl: SDL
@@ -40,15 +44,18 @@ tool:
     svn: SVN
     git: Git
     shell: unix shell scripting
+    vs2005: Visual Studio 2005
+    vs2012: Visual Studio 2012
 db:
     oracle: Oracle
     informix: Informix
     sqlite: SQLite
-buzz:
+tech:
     oop: OOP
     tdd: TDD
     patterns: design patterns
     sockets: POSIX sockets
+    corba: CORBA
 
 ## Professional Experience
 
@@ -59,7 +66,6 @@ isd:
     quit: present
     responsibility:
         support: Supported medical laboratory management application.
-    environment: Windows, AIX, C++, MFC, CORBA, VS2005, VS2012.
 
 megasoft:
     position: C++ Developer  
@@ -73,7 +79,6 @@ megasoft:
         sql: Wrote SQL queries for server data processing functions.
         support: Supported server part of billing system. Designed application-wide option storage.
         optimization: Optimized server performance using database optimizations and some language-specific optimizations. Reduced compiling time by 20%.
-    environment: Linux, C++, STL, Boost, Informix, SQL, XML.
 
 lognet:
     position: Junior C++ Developer  
@@ -84,7 +89,6 @@ lognet:
         bill: Developed module for XML bill generation for billing database, optimized its performance time and memory consumption.
     responsibility:
         support: Supported backend modules of billing system.
-    environment: AIX, C++, STL, Oracle DB, SQL, XML.
 
 sytoss:
     position: Junior C++ Developer  
@@ -95,7 +99,6 @@ sytoss:
         transfer: Developed server module for data transfer between different billing system.
     responsibility:
         support: Supported backend modules of billing system.
-    environment: AIX, C++, STL, Oracle DB, SQL, XML.
 
 pfu:
     position: Pre-diploma practice, recurrent job  
@@ -105,7 +108,6 @@ pfu:
     achievement:
         reference: Developed reference materials management software using C++/Qt4. Application stores domain-specific rich formatted pages and arranges them using hierachical structure.
         utils: Developed various utilities for text data processing using Python. Utilities works with large amount of files and designed for easy extension work.
-    environment: Windows, Python, C++, Qt4.
 
 ## Education
 
