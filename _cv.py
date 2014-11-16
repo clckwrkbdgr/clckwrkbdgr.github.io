@@ -15,11 +15,12 @@ def usage(error_message):
 		print(error_message)
 	print(USAGE)
 
-def to_struct(data):
+def to_struct(name, data):
 	if isinstance(data, dict):
-		return namedtuple('Struct', data.keys())(*[to_struct(x) for x in data.values()])
+		T = namedtuple(name, data.keys())
+		return T(*[to_struct(k.title(), v) for k, v in data.items()])
 	elif isinstance(data, list):
-		return [to_struct(x) for x in data]
+		return [to_struct('YAMLList', x) for x in data]
 	return data
 
 def main():
@@ -39,9 +40,13 @@ def main():
 
 		with open(filename, "r") as f:
 			data = yaml.load(f)
-		data = to_struct(data)
-		with open(dest_filename, "w") as f:
-			f.write(template.format(**(data.__dict__)))
+		try:
+			data = to_struct('CVTemplate', data)
+			with open(dest_filename, "w") as f:
+				f.write(template.format(**(data.__dict__)))
+		except AttributeError as e:
+			print("{0}: {1}".format(filename, e))
+			return 1
 
 if __name__ == "__main__":
 	retcode = main()

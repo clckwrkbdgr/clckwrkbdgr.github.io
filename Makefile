@@ -6,7 +6,7 @@ all: cv $(THUMBS)
 
 cv: $(CV)
 
-cv.%.md: _cv.%.yml
+cv.%.md: _cv.%.yml _cv.md _cv.py
 	python3 _cv.py $<
 
 thumbs/%: images/%
