@@ -1,0 +1,69 @@
+---
+layout: default
+parent: owlwood
+title: Morse code translator
+---
+<script type="text/javascript">
+function morse2text() {
+	CODE = {
+		'.-': 'A',
+		'-...': 'B',
+		'-.-.': 'C',
+		'-..': 'D',
+		'.': 'E',
+		'..-.': 'F',
+		'--.': 'G',
+		'....': 'H',
+		'..': 'I',
+		'.---': 'J',
+		'-.-': 'K',
+		'.-..': 'L',
+		'--': 'M',
+		'-.': 'N',
+		'---': 'O',
+		'.--.': 'P',
+		'--.-': 'Q',
+		'.-.': 'R',
+		'...': 'S',
+		'-': 'T',
+		'..-': 'U',
+		'...-': 'V',
+		'.--': 'W',
+		'-..-': 'X',
+		'-.--': 'Y',
+		'--..': 'Z',
+		'.----': '1',
+		'..---': '2',
+		'...--': '3',
+		'....-': '4',
+		'.....': '5',
+		'-....': '6',
+		'--...': '7',
+		'---..': '8',
+		'----.': '9',
+		'-----': '0'
+	};
+	var text = document.getElementById("input").value;
+	letters = text.split(/\s/);
+	document.getElementById("output").value = '';
+	for(var i in letters) {
+		code = letters[i].replace(/[^.]/g, '-');
+		result = CODE[code];
+		if(result == undefined) {
+			result = (code.length > 0) ? '<' + code + '>' : '';
+		}
+		document.getElementById("output").value =
+			document.getElementById("output").value + result;
+	}
+}
+</script>
+<textarea id="input" cols=50 rows=6></textarea>
+<br>
+<input type=button value="Morse -> text" onclick="morse2text(); return false;" />
+<br>
+<textarea id="output" cols=50 rows=6 readonly>
+Put your code in the area above and press button.
+Result text will be placed here.
+Each sequence should be separated with spaces or newline.
+Every non-dot symbol will be treated as a dash.
+</textarea>
