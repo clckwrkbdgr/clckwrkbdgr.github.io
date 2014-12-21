@@ -9,12 +9,12 @@ Ukraine, Dnipropetrovsk • umi<span class="NOSPAM">NOSPAM</span>0451 at gmail c
 
 ## Technical Proficiences
 
-**Languages**: C/C++, Python, SQL, XML, Java.  
-**Platforms**: Linux, AIX, Android, Windows.  
-**Libraries**: STL, Boost, Qt4, SDL, OpenGL, PopCap framework.  
-**Tools**: SVN, Git, unix shell scripting, Visual Studio 2005, Visual Studio 2012.  
-**Databases**: Oracle, Informix, SQLite.  
-**Technologies**: OOP, TDD, design patterns, POSIX sockets.  
+**Languages**: C++, C, Python, SQL.  
+**Platforms**: Linux, AIX, Windows.  
+**Libraries**: STL, Qt4, SDL, Boost.  
+**Tools**: SVN, Git, unix shell scripting.  
+**Databases**: SQLite, Oracle.  
+**Technologies**: OOP, TDD, design patterns.  
 
 ## Professional experience
 

@@ -26,11 +26,14 @@ lang:
     python: Python
     sql: SQL
     xml: XML
-    java: Java
+    java: Java # beginner
+    javascript: JavaScript # beginner
+    html: HTML # beginner
+    css: CSS # beginner
 os:
     linux: Linux
     aix: AIX
-    android: Android
+    android: Android # beginner
     win: Windows
 lib:
     stl: STL
@@ -38,8 +41,8 @@ lib:
     boost: Boost
     qt4: Qt4
     sdl: SDL
-    opengl: OpenGL
-    popcap: PopCap framework
+    opengl: OpenGL # beginner
+    popcap: PopCap framework # beginner
 tool:
     svn: SVN
     git: Git
@@ -55,7 +58,8 @@ tech:
     tdd: TDD
     patterns: шаблоны проектирования
     sockets: POSIX sockets
-    corba: CORBA
+    corba: CORBA # beginner
+    com: COM # beginner
 
 ## Professional Experience
 

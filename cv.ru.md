@@ -9,12 +9,12 @@ title: Резюме
 
 ## Технические навыки и умения
 
-**Языки программирования**: C/C++, Python, SQL, XML, Java.  
-**Платформы**: Linux, AIX, Android, Windows.  
-**Библиотеки**: STL, Boost, Qt4, SDL, OpenGL, PopCap framework.  
-**Инструментарий**: SVN, Git, unix shell scripting, Visual Studio 2005, Visual Studio 2012.  
-**Базы данных**: Oracle, Informix, SQLite.  
-**Технологии**: ООП, TDD, шаблоны проектирования, POSIX sockets.  
+**Языки программирования**: C++, C, Python, SQL.  
+**Платформы**: Linux, AIX, Windows.  
+**Библиотеки**: STL, Qt4, SDL, Boost.  
+**Инструментарий**: SVN, Git, unix shell scripting.  
+**Базы данных**: SQLite, Oracle.  
+**Технологии**: ООП, TDD, шаблоны проектирования.  
 
 ## Профессиональный опыт
 

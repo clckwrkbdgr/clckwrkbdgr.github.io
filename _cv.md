@@ -9,12 +9,12 @@ title: {title}
 
 ## {cv.skills}
 
-**{cv.lang}**: {lang.c}/{lang.cpp}, {lang.python}, {lang.sql}, {lang.xml}, {lang.java}.  
-**{cv.os}**: {os.linux}, {os.aix}, {os.android}, {os.win}.  
-**{cv.lib}**: {lib.stl}, {lib.boost}, {lib.qt4}, {lib.sdl}, {lib.opengl}, {lib.popcap}.  
-**{cv.tool}**: {tool.svn}, {tool.git}, {tool.shell}, {tool.vs2005}, {tool.vs2012}.  
-**{cv.db}**: {db.oracle}, {db.informix}, {db.sqlite}.  
-**{cv.tech}**: {tech.oop}, {tech.tdd}, {tech.patterns}, {tech.sockets}.  
+**{cv.lang}**: {lang.cpp}, {lang.c}, {lang.python}, {lang.sql}.  
+**{cv.os}**: {os.linux}, {os.aix}, {os.win}.  
+**{cv.lib}**: {lib.stl}, {lib.qt4}, {lib.sdl}, {lib.boost}.  
+**{cv.tool}**: {tool.svn}, {tool.git}, {tool.shell}.  
+**{cv.db}**: {db.sqlite}, {db.oracle}.  
+**{cv.tech}**: {tech.oop}, {tech.tdd}, {tech.patterns}.  
 
 ## {cv.exp}
 
