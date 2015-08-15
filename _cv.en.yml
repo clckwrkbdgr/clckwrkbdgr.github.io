@@ -26,6 +26,7 @@ lang:
     python: Python
     sql: SQL
     xml: XML
+    perl: Perl
     java: Java # beginner
     javascript: JavaScript # beginner
     html: HTML # beginner
@@ -68,6 +69,10 @@ isd:
     name: ISD, Ltd
     start: Oct 2014
     quit: present
+    achievement:
+        performance: Improved performance of several modules and network system.
+        staticanalysis: Participated in static analysis tools testing on codebase.
+        utilities: Developed utitilies for testing and codebase support.
     responsibility:
         support: Supported medical laboratory management application.
 

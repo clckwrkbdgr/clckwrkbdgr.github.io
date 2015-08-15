@@ -22,9 +22,12 @@ title: {title}
 **{isd.name}**, {isd.start} - {isd.quit}
 
 * {isd.responsibility.support}
+* {isd.achievement.performance}
+* {isd.achievement.staticanalysis}
+* {isd.achievement.utilities}
 
 **{cv.env}**: {os.win}, {os.aix}, {tool.vs2005}, {tool.vs2012}.  
-**{cv.usedtechs}**: {lang.cpp}, {lib.mfc}, {tech.corba}.
+**{cv.usedtechs}**: {lang.perl}, {lang.cpp}, {lib.mfc}, {tech.corba}.
 
 ----
 

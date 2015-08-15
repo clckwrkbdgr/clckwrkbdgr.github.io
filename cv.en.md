@@ -22,9 +22,12 @@ C++ Developer
 **ISD, Ltd**, Oct 2014 - present
 
 * Supported medical laboratory management application.
+* Improved performance of several modules and network system.
+* Participated in static analysis tools testing on codebase.
+* Developed utitilies for testing and codebase support.
 
 **Environment**: Windows, AIX, Visual Studio 2005, Visual Studio 2012.  
-**Technologies**: C++, MFC, CORBA.
+**Technologies**: Perl, C++, MFC, CORBA.
 
 ----
 

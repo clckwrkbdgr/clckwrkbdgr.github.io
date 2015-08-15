@@ -26,6 +26,7 @@ lang:
     python: Python
     sql: SQL
     xml: XML
+    perl: Perl
     java: Java # beginner
     javascript: JavaScript # beginner
     html: HTML # beginner
@@ -68,6 +69,10 @@ isd:
     name: ISD, Ltd
     start: Oct 2014
     quit: настоящее время
+    achievement:
+        performance: Улучшил произоводительность нескольких модулей и сетевого обмена.
+        staticanalysis: Участвовал в тестировании средств статического анализа.
+        utilities: Разработал утилиты для тестирования и поддержки репозиториев.
     responsibility:
         support: Поддерживал приложение для управления медицинской лабораторией.
 
