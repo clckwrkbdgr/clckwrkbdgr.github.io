@@ -42,13 +42,14 @@ def main():
 			data = yaml.load(f)
 		try:
 			data = to_struct('CVTemplate', data)
+			cv = template.format(**(data.__dict__))
 			with open(dest_filename, "w") as f:
-				f.write(template.format(**(data.__dict__)))
+				f.write(cv)
 		except KeyError as e:
 			print("{0}: missing {1} group".format(filename, e))
 			return 1
 		except AttributeError as e:
-			print("{0}: {1}".format(filename, e))
+			print("{0}:0: {1}".format(filename, e))
 			return 1
 
 if __name__ == "__main__":
