@@ -2,7 +2,7 @@ THUMBS = $(shell grep -ahro --exclude _new_post.sh --exclude Makefile --exclude 
 CV = cv.en.md cv.ru.md
 
 all: cv $(THUMBS)
-	jekyll --pygments
+	jekyll build
 
 cv: $(CV)
 
@@ -16,4 +16,4 @@ thumbs/%: images/%
 
 .PHONY: server
 server: all
-	nohup jekyll --server &
+	nohup jekyll server &
