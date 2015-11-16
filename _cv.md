@@ -22,6 +22,8 @@ title: {title}
 **{isd.name}**, {isd.start} - {isd.quit}
 
 * {isd.responsibility.support}
+* {isd.responsibility.design}
+* {isd.responsibility.management}
 * {isd.achievement.performance}
 * {isd.achievement.staticanalysis}
 * {isd.achievement.utilities}

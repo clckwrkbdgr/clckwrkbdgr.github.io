@@ -72,9 +72,11 @@ isd:
     achievement:
         performance: Improved performance of several modules and network system.
         staticanalysis: Participated in static analysis tools testing on codebase.
-        utilities: Developed utitilies for testing and codebase support.
+        utilities: Developed number of utitilies for testing and codebase support.
     responsibility:
         support: Supported medical laboratory management application.
+        design: Low-level system design and planning.
+        management: Performance review of modules, code base and repository management.
 
 megasoft:
     position: C++ Developer  
