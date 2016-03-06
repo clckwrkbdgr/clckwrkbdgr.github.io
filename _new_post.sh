@@ -15,6 +15,7 @@ fi
 POST_DATE=$(date '+%Y-%m-%d %H:%M:%S')
 FILE_DATE=$(echo "$POST_DATE" | grep -o '^[^ ]\+')
 FULL_FILE_NAME="_posts/${FILE_DATE}-${FILE_NAME}.md"
+echo "Post file name: $FULL_FILE_NAME"
 
 touch "$FULL_FILE_NAME"
 echo "---" >>"$FULL_FILE_NAME"
