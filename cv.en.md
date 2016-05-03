@@ -24,6 +24,7 @@ C++ Developer
 * Supported medical laboratory management application.
 * Low-level system design and planning.
 * Performance review of modules, code base and repository management.
+* Supported resources translation system.
 * Improved performance of several modules and network system.
 * Participated in static analysis tools testing on codebase.
 * Developed number of utitilies for testing and codebase support.

@@ -24,12 +24,13 @@ title: {title}
 * {isd.responsibility.support}
 * {isd.responsibility.design}
 * {isd.responsibility.management}
+* {isd.responsibility.resources}
 * {isd.achievement.performance}
 * {isd.achievement.staticanalysis}
 * {isd.achievement.utilities}
 
 **{cv.env}**: {os.win}, {os.aix}, {tool.vs2005}, {tool.vs2012}.  
-**{cv.usedtechs}**: {lang.perl}, {lang.cpp}, {lib.mfc}, {tech.corba}.
+**{cv.usedtechs}**: {lang.perl}, {lang.python}, {lang.cpp}, {lib.mfc}, {tech.corba}.
 
 ----
 

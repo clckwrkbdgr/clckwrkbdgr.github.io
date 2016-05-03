@@ -77,6 +77,7 @@ isd:
         support: Supported medical laboratory management application.
         design: Low-level system design and planning.
         management: Performance review of modules, code base and repository management.
+        resources: Supported resources translation system.
 
 megasoft:
     position: C++ Developer  
