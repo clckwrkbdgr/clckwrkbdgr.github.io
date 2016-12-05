@@ -3,10 +3,6 @@ layout: default
 title: CV
 ---
 
-# Igor Chaika
-
-Ukraine, Dnipropetrovsk • umi<span class="NOSPAM">NOSPAM</span>0451 at gmail com • 099-047-0156
-
 ## Technical Proficiences
 
 **Languages**: C++, C, Python, SQL.  
@@ -22,15 +18,16 @@ C++ Developer
 **ISD, Ltd**, Oct 2014 - present
 
 * Supported medical laboratory management application.
-* Low-level system design and planning.
+* Low-level system design and planning, minor participation in project management.
+* Participated in transition of the backend system from CORBA to SOAP.
 * Performance review of modules, code base and repository management.
 * Supported resources translation system.
 * Improved performance of several modules and network system.
 * Participated in static analysis tools testing on codebase.
-* Developed number of utitilies for testing and codebase support.
+* Developed a number of utitilies for testing and codebase support.
 
-**Environment**: Windows, AIX, Visual Studio 2005, Visual Studio 2012.  
-**Technologies**: Perl, C++, MFC, CORBA.
+**Environment**: Windows, AIX, Linux, Visual Studio 2005, Visual Studio 2012.  
+**Technologies**: C, C++03/11, CORBA, SOAP, Unix shell, Python, Perl, MFC.
 
 ----
 
@@ -43,7 +40,7 @@ C++ Developer
 * Supported server part of billing system. Designed application-wide option storage.
 * Optimized server performance using database optimizations and some language-specific optimizations. Reduced compiling time by 20%.
 
-**Environment**: Linux.
+**Environment**: Linux.  
 **Technologies**: C++, STL, Boost, Informix, SQL, XML.
 
 ----
