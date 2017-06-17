@@ -27,10 +27,12 @@ title: {title}
 * {isd.responsibility.resources}
 * {isd.achievement.performance}
 * {isd.achievement.staticanalysis}
+* {isd.achievement.linux}
+* {isd.achievement.soap}
 * {isd.achievement.utilities}
 
-**{cv.env}**: {os.win}, {os.aix}, {tool.vs2005}, {tool.vs2012}.  
-**{cv.usedtechs}**: {lang.perl}, {lang.python}, {lang.cpp}, {lib.mfc}, {tech.corba}.
+**{cv.env}**: {os.win}, {os.aix}, {os.linux}, {tool.vs2005}, {tool.vs2012}.  
+**{cv.usedtechs}**: {lang.perl}, {lang.python}, {lang.c}, {lang.cpp}, {lib.mfc}, {tech.corba}, {tech.soap}.
 
 ----
 

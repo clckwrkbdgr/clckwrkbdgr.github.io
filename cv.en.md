@@ -5,12 +5,12 @@ title: CV
 
 ## Technical Proficiences
 
-**Languages**: C++, C, Python, SQL.  
+**Languages**: C++, C, Python, SQL, Perl.  
 **Platforms**: Linux, AIX, Windows.  
-**Libraries**: STL, Qt4, SDL, Boost.  
-**Tools**: SVN, Git, unix shell scripting.  
-**Databases**: SQLite, Oracle.  
-**Technologies**: OOP, TDD, design patterns.  
+**Libraries**: STL, Qt4, Boost, SOAP.  
+**Tools**: SVN, Git, unix shell scripting, gdb.  
+**Databases**: SQLite, Oracle, Informix.  
+**Technologies**: OOP, TDD, design patterns, multithreading, client/server.  
 
 ## Professional experience
 
@@ -20,13 +20,14 @@ C++ Developer
 * Supported medical laboratory management application.
 * Low-level system design and planning, minor participation in project management.
 * Participated in transition of the backend system from CORBA to SOAP.
+* Participated in migration of the product to the Linux platform.
 * Performance review of modules, code base and repository management.
 * Supported resources translation system.
 * Improved performance of several modules and network system.
 * Participated in static analysis tools testing on codebase.
 * Developed a number of utitilies for testing and codebase support.
 
-**Environment**: Windows, AIX, Linux, Visual Studio 2005, Visual Studio 2012.  
+**Environment**: Windows, AIX, Linux, Oracle DB, Visual Studio 2012.  
 **Technologies**: C, C++03/11, CORBA, SOAP, Unix shell, Python, Perl, MFC.
 
 ----
